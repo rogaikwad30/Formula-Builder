@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.basic{
+    border: 1px solid black; 
+    margin: 35px auto;
+}
+
+.basic .box{
+    border: 1px solid black;
+    margin: 25px 50px;
+}
+
+.basic .tittle{
+    border: 1px solid red;
+    display: inline-block;
+    padding: 10px 0px 10px 0px;
+    font-weight: bold;
+}
+
+.basic .inp{
+    border: 1px dashed black;
+}
+
+.basic .inp label{ 
+    margin-bottom: 7.5px;
+
+}
+
+.basic .inp input{
+    padding: 7px;
+    max-width: 400px;
+    min-width: 280px;
+    text-align: left;
+    border-radius: 10px;
+    outline: none;
+}

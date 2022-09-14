@@ -1,0 +1,173 @@
+<div class="container final">
+    <div class="row">
+        <h5>
+            <span class="tittle">
+                <i>
+                   <h3>
+                        Formula Details - 
+                        <b>
+                            {{formula_name}}
+                        </b>
+                   </h3>
+                </i>
+            </span>
+        </h5>
+    </div>
+    
+    <div class="row zone mt-5">
+        <div class="col-md-4">
+            <section class="row mb-2 p-3">
+                <button (click)="onAddingTag()">
+                    <i class="fa fa-plus p-3" aria-hidden="true">
+                        Add a Tag
+                    </i>
+                </button>
+            </section>
+            <section class="row mt-2 p-3">
+                <button class="btn btn-secondary p-4">
+                    <small>
+                        Configurating 
+                    </small>
+                    <br>
+                    <b>
+                        {{configurating_tag}}
+                    </b>
+                </button>
+            </section>
+        </div>
+
+        <div class="col-md-8 result_coll">
+            <section class="row">
+                <div>
+                    <i>
+                        <h6>
+                            Result Collection Tags - 
+                        </h6>
+                    </i>
+                </div>
+                <div>
+                    <button *ngFor="let obj of tags.derived_tags" (click)="onClickDerivedTag(obj)" class="btn btn-primary btn-sm py-2 px-5 m-2">
+                        <b>
+                            {{obj["name"]}}
+                        </b>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <hr>
+
+    <div class="row">
+        <div class="col-md-4 sel p-3">
+            <label for="ds" class="mb-2">Select DataSource from list</label>
+            <select name="ds" id="ds" class="w-100" (change)="onChangeDataSource($event.target)">
+                <option *ngFor="let obj of data_sources" value="{{obj['conf']['collection']}}">{{obj['conf']['collection']}}</option>
+            </select>
+        </div>
+        <div class="col-md-8 formula_desc">
+            <section class="formula">
+                {{formula_representation}}
+            </section>
+        </div>
+    </div>
+
+
+    <div class="row main mt-3" cdkDropListGroup>
+        <section class="col-md-3 tags">
+                <div class="tag" 
+                 cdkDropList
+                 [cdkDropListData]="tags.datasource_tags"
+                 >
+                    <span *ngFor="let obj of tags.datasource_tags" cdkDrag >{{obj["name"]}}</span>
+                </div>
+
+
+                <div 
+                cdkDropList
+                [cdkDropListData]="tags.saved_tags
+                ">
+                    <span class="tag" *ngFor="let obj of tags.saved_tags">
+                        <p class="saved_tag"
+                        cdkDrag>
+                            {{obj["name"]}}
+                        </p>
+                    </span>
+                </div>
+
+        </section>
+        <section class="col-md-6 playzone">
+            <section>
+                <div 
+                    class="dropArea" 
+                    cdkDropList
+                    (cdkDropListDropped)="onDrop($event)"
+                    [cdkDropListData]="dropped_tags"
+                    >
+                   
+                        <span 
+                            cdkDrag
+                            class="dropped_tag" *ngFor="let obj of dropped_tags">
+                                {{obj["name"]}}
+                        </span>
+                </div>
+            </section>
+            <div class="row">
+                <div class="col-6">
+                    <section class="aggrs" 
+                    cdkDropList
+                    [cdkDropListData]="aggregators"
+                    >
+                        <span *ngFor="let aggr of aggregators" class="aggr" cdkDrag
+                        >
+                            {{aggr.name}}
+                        </span>
+                    </section>
+                </div>
+                <div class="col-6">
+                    <section class="operators"
+                    cdkDropList
+                    [cdkDropListData]="operators"
+                    > 
+
+                        <span *ngFor="let obj of operators" class="operator" cdkDrag>
+                            {{obj["name"]}}
+                        </span>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section class="col-md-3 config">
+           <div  class="item">
+                <label for="name" class="ele">Enter Unique TagName</label>
+                <input (change)="onChangeName($event)" value="{{tag_name}}" type="text" class="ele" placeholder="Enter Unique Tag Name" id="name"/>
+            </div>
+            
+            <div class="item"> 
+                <label for="distinct" class="ele">Distinct On</label>
+                <p class="selected" *ngFor="let obj of distinct_tags_selected"  > 
+                    {{obj}}
+                </p>
+
+                <select name="distinct" id="distinct" class="ele" multiple (change)="onSelectDistinctTag()" [(ngModel)]="distinct_tags_selected">  
+                    
+
+                    <option  *ngFor="let obj of selectable_tags" value="{{obj}}"> 
+                        {{obj}}
+                    </option>   
+                </select>
+            </div>
+ 
+            <div class="buttons save_tag text-center ele">
+                <button (click)="onSaveTag()" class="btn btn-success w-100 py-3">Save Tag</button>
+
+                <button (click)="onSaveFormula()" class="btn btn-primary w-100 py-3 mt-2">Save Formula</button>
+
+
+            </div>
+        </section>
+ 
+    </div>
+
+</div>

@@ -1,0 +1,50 @@
+<div class="container basic">
+    <div class="row box text-center">
+        <section class="tittle">
+            <h3>
+                Basic Formula Details
+            </h3>
+        </section>
+    </div>
+
+    <div class="row box text-center">
+        <section class="inp"> 
+            <label for="name">Enter Unique Formula Name</label> 
+            <br>
+            <input type="text" value="{{formula_name}}" placeholder="Formula Name"  (input)="onChangeName($event.target)"> 
+        </section>
+        <section class="inp mt-4"> 
+            <label for="name">Enter Unique Result Collection Name</label> 
+            <br>
+            <input type="text" value="{{result_collection}}" placeholder="Result Collection Name" (input)="onChangeResultColl($event.target)"> 
+        </section>
+
+        <section class="inp mt-4">
+            <label for="start_from_date">
+                Select Start Date
+            </label>
+            <br>
+            <input value="{{start_from_date}}" type="date" (change)="onChangeStartFromDate($event)" required>
+        </section>
+
+        <section class="inp mt-4">
+            <label for="start_from_time" >
+                Select Start from
+            </label> 
+            <br>
+            <input type="time" (change)="onChangeStartFromTime($event)" required>
+        </section>
+
+        <section class="inp mt-4">
+            <label for="start_from_time">
+                Frequency Interval in secs
+            </label> 
+            <br>
+            <input value="{{interval}}" (change)="onChangeInterval($event)" type="number" min="1" placeholder="Enter interval frequency in seconds" required>
+        </section>
+
+        <section class="inp mt-4">  
+            <input (click)="onSave()" type="button" class="btn btn-success text-center" value="SAVE BASIC DETAILS"> 
+        </section>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+<div class="main">
+    <section class="header container">
+        <div class="row">
+            <span class="tittle">
+                Formula Builder UI
+            </span>
+        </div>
+    </section>
+    
+    
+    <section class="container content">
+        <div class="row buttons_row">
+            <span class="addBtn">
+                <a href="/basic?_id=new">ADD New Formula</a>
+            </span>
+            <button class="editBtn" (click)='onDelete("all")'>Delete All</button>
+        </div>
+    
+        <div class="row text-center">
+            <h5>Existing list of Formulas will be here</h5>
+        </div>
+    
+        <div class="row">
+            <div class="col-sm-6 col-md-5 formula_list">
+               <section *ngFor="let obj of formulas_list" class="formula text-center">
+                  <b>{{obj["formula_name"]}}</b>
+                  <span class="logos">
+                    
+                    
+                    <a href='{{"/basic/?_id=" + obj["_id"]}}'>
+                        <i class="fas fa-edit edit"></i>
+                    </a>
+                    <button (click)='onDelete(obj["_id"])'>
+                        <i class="fa fa-trash delete"></i>
+                    </button>
+                    <button (click)='onOpenTreeView(obj["_id"])'>
+                        <i class="fa fa-tree"></i>
+                    </button>
+                  </span>
+               </section>
+            </div>
+            <div class="col-sm-6 col-md-7 tree">
+                <div class="row text-center tree_row">
+                    <b>
+                        Tree View of Formula
+                    </b>
+                </div>
+                <div class="row tree_row view">
+                    <app-diagram [model]="model"></app-diagram>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

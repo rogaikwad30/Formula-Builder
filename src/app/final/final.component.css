@@ -1,0 +1,180 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.final{
+    border: 1px solid black;
+    margin: 50px auto;
+}
+ 
+.final .zone{
+    border: 1px solid black;
+}
+
+.zone section{
+    border: 1px solid red;
+    border-radius: 7px;
+}
+
+.result_coll{
+    border: 1px solid black;
+    padding: 10px 20px;
+}
+
+.result_coll section{
+    min-height: 100%;
+    padding: 10px;
+}
+
+
+.sel{
+    border: 1px dashed black;  
+}
+
+.formula_desc{ 
+    border: 2px dashed black;
+    min-height: 100%;
+    padding: 10px;
+}
+
+
+.formula_desc .formula{ 
+    border-radius: 6px;
+    height: 100%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+
+.main{
+    border: 2px solid red;
+}
+
+.main .tags, .main .playzone, .main .config{
+    border: 1px solid black;
+    min-height: 200px;
+}
+
+.tags .tag{
+    border: 1px solid green;
+    text-align: center;
+}
+
+.tags .tag span{
+    border:  1px darkcyan dashed;
+    width: 190px;
+    display: inline-block;
+    margin: 10px auto;
+}
+
+.playzone .dropArea{
+    border: 2px darkblue dashed;
+    margin: 20px;
+    min-height: 300px; 
+    padding: 30px;
+}
+
+
+.playzone .aggrs, .playzone .operators{
+    margin: 20px;
+    border: 2px dashed green;
+    height: 200px;
+}
+
+.playzone .operators .operator{
+    border: 1px solid red;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.playzone .aggrs .aggr{
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 10px;
+    display: inline-block;
+}
+
+
+.dropped_tag{
+    border: 2px dashed black;
+    padding: 10px 20px;
+    border-radius: 10px; 
+    position: relative;
+    display: inline-block;
+}
+
+.config{
+    position: relative;
+}
+
+.save_tag{
+    position: absolute;
+    bottom: 0;
+}
+
+.item{
+    /* border: 1px solid black; */
+    padding: 10px ;
+    margin: 10px auto;
+}
+
+.item label{
+    /* border: 1px solid black; */
+    padding: 12px 0px;
+}
+
+.item .ele{
+    padding: 12px 12px;
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0); 
+}
+
+.item select{
+    display: flex;
+    height: 200px;
+}
+
+
+.item select option{
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 6px;
+    margin-bottom: 20px ;
+}
+
+.item .ele span{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.item .ele .check{
+    display: inline-block;
+    padding: 10px; 
+}
+
+.item .selected{
+    display: inline-block;
+    border: 1px solid rebeccapurple;
+    width: 100px;   
+    padding: 12px; 
+    font-size: 17px;
+    background: rgb(225, 225, 225);
+    border-radius: 5px;
+}
+

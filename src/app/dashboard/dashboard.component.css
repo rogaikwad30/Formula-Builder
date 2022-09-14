@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+
+.main{
+    margin: 35px auto;  
+}
+
+.row{
+    border: 1px solid black;
+    padding: 12px 12px; 
+}
+
+.buttons_row{
+    padding: 25px 5px;
+}
+
+.content .addBtn, .content .editBtn{ 
+    width: 200px;
+    text-align: center;
+    border: 1px dashed black;
+    padding: 12px;
+    margin: 10px 10px 0px 6px;
+    border-radius: 5px;
+}
+
+.formula_list{
+    border: 1px solid black;
+    padding: 0px 10px;
+}
+
+.formula_list .formula{
+    border: 1px solid red;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 5px auto;
+    position: relative;
+}
+
+.formula .logos{
+    position: absolute;
+    border: 1px solid green;
+    padding: 0px;
+    top: 0%;
+    right: 0%;
+    /* transform: translate(-50%,-50%); */
+}
+
+.formula .logos i{
+    border: 1px solid rebeccapurple;
+    margin: auto 5px;
+    font-size: large;
+    padding: 3px 0px 0px 0px;
+}
+
+.tree{
+    /* border: 1px solid red; */
+    min-height: 400px;
+}
+
+
+.tree .tree_row{
+    margin: 5px;
+}
+
+.view{
+    min-height: 400px;
+}

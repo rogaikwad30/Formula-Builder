@@ -24,7 +24,7 @@
                 Select Start Date
             </label>
             <br>
-            <input value="{{start_from_date}}" type="date" (change)="onChangeStartFromDate($event)" required>
+            <input [(ngModel)]="start_from_date" type="date" (change)="onChangeStartFromDate($event)" required>
         </section>
 
         <section class="inp mt-4">

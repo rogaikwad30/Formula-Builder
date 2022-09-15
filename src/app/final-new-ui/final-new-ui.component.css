@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Poppins:wght@300&display=swap");
+:root {
+  --blue: #1e90ff;
+  --whitebg: #00000019;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.main{
+    background: #00000019;
+    min-height: 100vh;
+    z-index: -1;
+    padding: 25px 225px;
+}
+
+.main .content {
+    background: white;
+    z-index: 1; 
+    border-radius: 2px;    
+}
+
+.content .fname{
+    background: #1e90ff;
+}
+
+.main .content .fname h5{
+    position: absolute;
+    left: 14px;
+}
+ 
+
+.content .row2 .btns{
+    /* border: 1px solid red; */
+    position: absolute;  
+    /* left: 14px; */
+    font-size: small;
+}
+.content .row2 .btns button{
+    margin: 30px 0px; 
+    width: 100%;
+    display: block;
+}
+
+.result_coll_tags{
+    border-left : 1px solid rgb(216, 210, 210);
+    height: 100%;
+    width: 100%;
+    padding: 15px 20px;
+}
+.result_coll_tags .result_tag{
+    font-size: small;  
+    display: inline;
+    margin: 5px;
+    border: 1px saddlebrown solid;
+}
+
+.ds{
+    position: absolute;
+    /* left: 14px; */
+    padding: 0px 12px ;
+}
+
+.ds select{
+    display: block;
+    width: 100%;
+    border: 1px solid black;
+    padding: 8px;
+    margin: 6px 0px;
+    /* height: 24px;  */
+    border-radius: 4px;
+    
+}
+
+.formula{ 
+    border-left : 1px solid rgb(216, 210, 210);
+    border-bottom : 1px solid rgb(216, 210, 210);
+}
+
+
+.formula h6{
+    position: absolute; 
+    left: 18px;  
+}
+ 
+
+.tags, .config, .playzone{
+    border: 1px solid rgb(216, 210, 210);
+    position: absolute;
+}
+
+.tags section{ 
+    height: 100%;
+    width: 100%; 
+    padding: 12px 0px;
+}
+
+
+.tags .tag{ 
+    box-shadow: 1px 1px 1px rgb(216, 210, 210), -1px  -1px 1px rgb(216, 210, 210);
+    display: block;
+    font-size: small;
+    text-align: center;
+    width: 180px; 
+    padding: 8px 12px;
+    margin: 14px auto;
+    border-radius: 2px;
+}
+
+.tags .tagDervied{
+    box-shadow: 1px 1px 1px rgb(163, 144, 209), -1px  -1px 1px rgb(163, 144, 209);
+}
+
+
+.playzone .dragzone{
+    border-bottom: 1px solid rgb(216, 210, 210); 
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 18px;
+}
+
+.playzone .dragzone .dropArea .item{
+    border: 1px solid blue;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 6px 24px;
+    margin: 4px;
+    border: 1px solid brown;
+}
+
+.playzone .aggregators{
+    border: 1px solid rgb(216, 210, 210);
+    width: 70%;
+    height: calc(330px - 201px + 20px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 14px 10px;
+}
+
+
+.playzone .aggregators .item {
+    border: 1px dashed rgb(216, 210, 210);
+    border-radius: 4px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    font-size: small;
+}
+
+
+.playzone .operators{
+    border: 1px solid rgb(216, 210, 210);
+    width: 30%;
+    height: calc(330px - 201px + 20px);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 14px 10px;
+}
+
+.playzone  .operators .item {
+    border: 1px dashed rgb(216, 210, 210);
+    border-radius: 4px;
+    display: inline-block;
+    margin: 3px;
+    padding: 4px 12px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.config section{
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.form-group {
+    display: block;
+    padding: 14px;
+    max-width: 350px;
+  }
+  
+  .form-group label {
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+  }
+  
+  .form-group input,
+  textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .form-group input,
+  span,
+  textarea {
+    font-size: 12px; 
+    padding: 12px;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+  }
+  
+  .form-group span {
+    display: inline-block;
+    position: absolute;
+    margin-top: -60px;
+    color: transparent;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .form-group label:focus-within {
+    border-color: blue;
+  }
+  
+  .form-group label:focus-within span,
+  .form-group label input:not(:placeholder-shown) + span,
+  .form-group label textarea:not(:placeholder-shown) + span {
+    font-size: 12px;
+    background-color: white;
+    padding: 0 4px;
+    color: black;
+    margin: -52.5px 0 0 10px;
+    font-weight: 600;
+  }
+    
+  
+  .is_it_final{ 
+    margin: 14px 18px 10px 18px;
+    font-size: 13px;
+  }
+
+  .is_it_final select{
+    padding: 3px 10px;
+    border-radius: 2px;
+    margin: 2px 12px;
+  }
+  
+
+  .config .btns{
+    position: absolute;
+    bottom: 0;
+    font-size: small; 
+    width: 100%; 
+  }
+
+  .config .btns button{
+    display: inline-block;
+    width: 100%; 
+    margin: 12px 0px 0px 0px;
+    border-radius: 0px;
+  }

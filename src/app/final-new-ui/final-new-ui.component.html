@@ -1,0 +1,176 @@
+<div class="main">
+    <section class="content">
+        <mat-grid-list cols="1" rowHeight="50px" class="fname">
+            <mat-grid-tile>
+                <h5 style="font-size: 16px;">
+                    Formula Name - 
+                    {{formula_name}}
+                </h5>
+            </mat-grid-tile>
+        </mat-grid-list>
+
+
+        <mat-grid-list cols="4" rowHeight="175px" class="row2">
+            <mat-grid-tile>
+
+                <div class="btns">
+                    <button mat-button (click)="onAddingTag()">
+                        Add a Tag
+                    </button>
+                     
+                    <button mat-button>
+                        Configurating Tag
+                        <br>
+                        {{configurating_tag}}
+                    </button>
+                </div> 
+
+            </mat-grid-tile>
+            <mat-grid-tile colspan="3" >
+                <section class="result_coll_tags">
+                    <h6>
+                        <small style="font-size: 14px;">
+                            Saved Tags will appear here
+                        </small>
+                    </h6>
+                    
+                    <br>
+
+                    <div>
+                        <small>
+                            <button  class="result_tag" mat-button *ngFor="let obj of tags.derived_tags" (click)="onClickDerivedTag(obj)"> 
+                                {{obj["name"]}}
+                            </button>
+                        </small>
+                    </div>
+                </section>
+            </mat-grid-tile>
+        </mat-grid-list>
+
+
+        <hr>
+
+        <mat-grid-list cols="4" rowHeight="120px" class="row3" style="
+        border-bottom : 1px solid rgb(216, 210, 210);">
+            <mat-grid-tile colspan="1">
+                <div class="ds">
+                    <label for="ds">Select DataSource</label>
+                    <select name="ds" id="ds" (change)="onChangeDataSource($event.target)">
+                        <option *ngFor="let obj of data_sources" value="{{obj['conf']['collection']}}" >{{obj['conf']['collection']}} 
+                        
+                        </option> 
+                    </select>
+                </div>
+            </mat-grid-tile>
+
+            <mat-grid-tile colspan="3" class="formula">
+                <h6 style="font-size: 16px;">
+                    {{formula_representation}}
+                </h6>
+            </mat-grid-tile>
+
+        </mat-grid-list>
+
+
+
+        <mat-grid-list cols="8" class="final" rowHeight="450px" class="row3" cdkDropListGroup>
+            <mat-grid-tile colspan="2" class="tags" >
+                <section>
+                    <div
+                    cdkDropList
+                    [cdkDropListData]="tags.datasource_tags">
+                        <span class="tag" *ngFor="let obj of tags.datasource_tags" cdkDrag>
+                            {{obj["name"]}}
+                        </span> 
+                    </div>
+                    
+                    
+                        
+                        
+                    <div 
+                    cdkDropList
+                    [cdkDropListData]="tags.saved_tags
+                    ">
+
+                        <span *ngFor="let obj of tags.saved_tags" cdkDrag class="tag tagDervied">
+                            {{obj["name"]}}
+                        </span> 
+                    </div> 
+                </section>
+
+
+            </mat-grid-tile>
+            <mat-grid-tile colspan="4" class="playzone">
+               <section class="dragzone" >
+                   <section style=" 
+                   height: 100%;">
+                       <div
+                       style=" 
+                       height: 100%;" 
+                       class="dropArea" 
+                       cdkDropList
+                       (cdkDropListDropped)="onDrop($event)"
+                       [cdkDropListData]="dropped_tags"
+                       >
+                            <small class="item" cdkDrag
+                             *ngFor="let obj of dropped_tags">
+                                {{obj["name"]}}
+                            </small> 
+                       </div>
+                   </section>
+               </section>
+
+
+               <section>
+                    <section class="aggregators"
+                    cdkDropList
+                    [cdkDropListData]="aggregators"
+                    >
+                        <small class="item" *ngFor="let aggr of aggregators" cdkDrag>
+                            {{aggr.name}}
+                        </small>
+                    </section>
+               </section>
+
+
+                <section>
+                    <section class="operators"
+                    cdkDropList
+                        [cdkDropListData]="operators"
+                        >
+                        <small class="item" *ngFor="let obj of operators"  cdkDrag>
+                            {{obj["name"]}}
+                        </small> 
+                    </section>
+               </section>
+           
+            </mat-grid-tile>
+            <mat-grid-tile colspan="2" class="config">
+                <section>
+                    
+
+                    <div class="is_it_final"> 
+                        <label for="toggle">Is it final Tag ?</label>
+                        <select [value]="is_it_final_tag" name="toggle" id="toggle" (change)="onChangeFinalTag($event)">
+                            <option value="false">False</option>
+                            <option value="true">True</option>
+                        </select>
+                    </div> 
+
+                    <div class="form-group">
+                        <label>
+                            <input type="text"  placeholder="Enter tagname" (change)="onChangeName($event)" value="{{tag_name}}">
+                            <span>TagName</span>
+                        </label>
+                    </div> 
+
+
+                    <div class="btns">
+                        <button (click)="onSaveTag()" mat-button style="background: rgb(199, 199, 250);">Save Tag</button>
+                        <button style="background: rgb(145, 255, 158);" (click)="onSaveFormula()"  mat-button>Save Formula</button>
+                    </div>
+                </section>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </section>
+</div>

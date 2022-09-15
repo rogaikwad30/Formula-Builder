@@ -17,13 +17,21 @@ import { FinalComponent } from './final/final.component';
 import { CommonModule } from '@angular/common';
 import { DiagramComponent } from './diagram/diagram.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { BasicNewUiComponent } from './basic-new-ui/basic-new-ui.component';
+
+
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import { DashboardNewUiComponent } from './dashboard-new-ui/dashboard-new-ui.component';
+import { FinalNewUiComponent } from './final-new-ui/final-new-ui.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
     FinalComponent, 
-    DiagramComponent
+    DiagramComponent, BasicNewUiComponent, DashboardNewUiComponent, FinalNewUiComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +49,10 @@ import { MatDialogModule } from '@angular/material/dialog';
     ReactiveFormsModule,
     MatSelectModule,
     
-    MatDialogModule
+    MatDialogModule,
+
+
+    MatGridListModule , MatButtonModule, MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent],

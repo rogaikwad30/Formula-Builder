@@ -2,22 +2,23 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {HttpClient} from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http'; 
-import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-basic',
-  templateUrl: './basic.component.html',
-  styleUrls: ['./basic.component.css']
+  selector: 'app-basic-new-ui',
+  templateUrl: './basic-new-ui.component.html',
+  styleUrls: ['./basic-new-ui.component.css']
 })
-export class BasicComponent implements OnInit {
+export class BasicNewUiComponent implements OnInit {
+
   formula_name = ""
-  result_collection = ""
-  start_from_date = null
-  start_from_time = null
+  result_collection = "" 
   interval = null
-  start_from = Date.now()
-  
-  constructor(private route: ActivatedRoute,private http : HttpClient) { }
+  start_from_ep = null
+  start_from_obj = ""
+
+  constructor(private route: ActivatedRoute,private http : HttpClient) { 
+
+  }
 
   ngOnInit(): void {
     this.route.queryParams
@@ -31,15 +32,11 @@ export class BasicComponent implements OnInit {
               this.formula_name = Response["data"]["formula_name"]
               this.result_collection = Response["data"]["result_collection"]
               console.log("Resp : ",Response)
-
-              let ep = 1661847900000
-              let d = new Date(ep)
-              console.log(d); 
-              console.log("here : ", d.getDate(), d.getMonth(), d.getFullYear())
-              this.wow(d);
-              console.log(this.start_from_date)
-
-              this.interval = 300 
+              
+              // set up interval configurartion for ui
+              this.start_from_obj = Response["start_from"] || ""
+              this.interval = Response["interval"] || ""
+              
             } 
             else{
               window.location.href = "/"
@@ -49,9 +46,6 @@ export class BasicComponent implements OnInit {
       });
   }
 
-  wow(val){
-    this.start_from_date = "2022-09-07"
-  }
   onChangeName = (name) => {
     this.formula_name = name.value
   }
@@ -68,54 +62,37 @@ export class BasicComponent implements OnInit {
       })
     };
 
-    this.start_from = this.construct_start_from(this.start_from_date,this.start_from_time)
     const request_body = {
       "formula_name" : this.formula_name,
       "result_collection" : this.result_collection,
       "interval" : this.interval,
-      "start_from" : this.start_from
+      "start_from" :  this.start_from_ep,
+      "start_from_obj" : this.start_from_obj
     }
 
     console.log("Posting : " ,request_body)
     this.http.post(url,request_body,httpOptions).subscribe( (Response) => {  
       console.log("Post Response is : " ,Response)
       if(Response["resp"]=="success"){
-       window.location.href = "/final?_id=" + Response["_id"] 
+       window.location.href = "/final-new-ui?_id=" + Response["_id"] 
       }
     });
 
   }
-
-  construct_start_from = (date,time) => {
-    console.log("Inp : ",date, time)
-    let arr = date.split("-")
-    let year = parseInt(arr[0])
-    let month = parseFloat(arr[1])-1
-    let day = parseFloat(arr[2])
-
-    arr = time.split(":")
-    let hr = parseInt(arr[0])
-    let min = parseFloat(arr[1])
-
-
-    console.log(year,month,day,hr,min)
-
-
-    let ep = new Date(year,month,day,hr,min,0,0).getTime()
-    return ep
-  }
-
-  onChangeStartFromDate = (event) => { 
-    this.start_from_date = event.target.value
-    console.log("Date : ", event);
-    
-  }
-
-  onChangeStartFromTime = (event) => { 
-    this.start_from_time = event.target.value
-  } 
-
+ 
   onChangeInterval = (event) => { 
     this.interval = parseFloat(event.target.value)
   }
+
+
+  onChangeDateTime = (event) => {
+    let datetime = event.target.value
+    console.log("Hi : ",datetime );
+    let epoch = new Date(event.target.value).valueOf() 
+    console.log("Epoch : ", epoch)
+    this.start_from_ep = epoch / 1000
+    this.start_from_obj = event.target.value
+  }
+
+
 }

@@ -1,0 +1,50 @@
+<div class="main">
+    <section class="content">
+        <mat-grid-list cols="1" rowHeight="700px">
+            <mat-grid-tile >
+                <section class="details">
+                    <h4>
+                        <span class="lead">Basic Configurations</span>
+                    </h4>
+                    
+
+                    <div class="form-group">
+                        <label>
+                            <input type="text" min="1" id="name" placeholder="Enter Unique Formula Name" value="{{formula_name}}"  (input)="onChangeName($event.target)">
+                            <span>Unique Formula Name</span>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <input type="text" min="1" id="result_collection" placeholder="Enter Unique Result Collection Name" value="{{result_collection}}" (input)="onChangeResultColl($event.target)">
+                            <span>Unique Result Collection Name</span>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <input [(ngModel)]="start_from_obj" (change)="onChangeDateTime($event)" type="datetime-local"  placeholder="Interval Configuration">
+                            <span>Start Interval Configuration</span>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <input type="number"  placeholder="Logging Frequency in seconds" (change)="onChangeInterval($event)"  value="{{interval}}">
+                            <span>Logging Frequency</span>
+                        </label>
+                    </div>
+
+                    <div style="font-size: 12px; opacity: 0.6; padding: 10px 4px; padding-bottom: 16px;">  
+                        <p>Frequency 1 means absolute data logging while >1 means cyclic logging </p>
+                    </div>
+
+                    <button  class="save_btn" (click)="onSave()"   mat-button color="primary">Save and Proceed</button>
+
+
+                </section>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </section>
+</div>

@@ -6,19 +6,25 @@ import { CdkDragDrop, moveItemInArray,transferArrayItem} from '@angular/cdk/drag
 
 
 @Component({
-  selector: 'app-final',
-  templateUrl: './final.component.html',
-  styleUrls: ['./final.component.css']
+  selector: 'app-final-new-ui',
+  templateUrl: './final-new-ui.component.html',
+  styleUrls: ['./final-new-ui.component.css']
 })
-export class FinalComponent implements OnInit {
+export class FinalNewUiComponent implements OnInit {
   formula_name = "";
   result_collection = "";
   configurating_tag = "" || "NA";
   formula_representation = "";
   backend_data = []
-  
+  formula_info = {}
+  is_it_final_tag = false
+  // using for saving data in formulas collection later
+
+
   tag_name = "";
   formula_id = "";
+
+  datasource_id = ""
 
   selectable_tags = [];
   distinct_tags_selected = [];
@@ -385,43 +391,8 @@ export class FinalComponent implements OnInit {
       type : "aggregator",
       name : "unique count"
   }]
-  aggregators_copy = [
-    {
-      type : "aggregator",
-      name : "sum"
-    },
-    {
-      type : "aggregator",
-      name : "avg"
-    },
-    {
-      type : "aggregator",
-      name : "min"
-    },
-    {
-      type : "aggregator",
-      name : "max"
-    },
-    {
-      type : "aggregator",
-      name : "count"
-    },
-    {
-      type : "aggregator",
-      name : "first"
-    },
-    {
-      type : "aggregator",
-      name : "last"
-    },
-    {
-      type : "aggregator",
-      name : "distinct count"
-    },
-    {
-      type : "aggregator",
-      name : "unique count"
-  }]
+  aggregators_copy = JSON.parse(JSON.stringify(this.aggregators)) 
+
   operators = [ 
     {
       type : "operator",
@@ -438,51 +409,10 @@ export class FinalComponent implements OnInit {
     {
       type : "operator",
       name : "/"
-    },
-    {
-      type : "operator",
-      name : "%"
-    },
-    {
-      type : "operator",
-      name : "("
-    },
-    {
-      type : "operator",
-      name : ")"
     }
   ]
-  operators_copy = [
-    {
-      type : "operator",
-      name : "+"
-    },
-    {
-      type : "operator",
-      name : "-"
-    },
-    {
-      type : "operator",
-      name : "*"
-    },
-    {
-      type : "operator",
-      name : "/"
-    },
-    {
-      type : "operator",
-      name : "%"
-    },
-    {
-      type : "operator",
-      name : "("
-    },
-    {
-      type : "operator",
-      name : ")"
-    }
-  ]
-  
+  operators_copy = JSON.parse(JSON.stringify(this.operators))
+
   constructor(private route: ActivatedRoute,private http : HttpClient) { }
 
   ngOnInit(): void {
@@ -501,7 +431,7 @@ export class FinalComponent implements OnInit {
                 this.tags.saved_tags = JSON.parse(JSON.stringify(Response["data"]["saved_tags"]))
                 this.saved_tags_copy = JSON.parse(JSON.stringify(Response["data"]["saved_tags"]))
                 this.tags.derived_tags = JSON.parse(JSON.stringify(Response["data"]["saved_tags"])) 
-                
+                this.formula_info = Response["data"]
               }
             } 
             else{
@@ -536,6 +466,10 @@ export class FinalComponent implements OnInit {
         for(let obj of this.tags.datasource_tags){
           this.selectable_tags.push(obj["name"])
         }
+
+        console.log("Selected Ds : ",obj);
+        this.datasource_id = obj["id"]
+        
       }
     }
   }
@@ -565,6 +499,7 @@ export class FinalComponent implements OnInit {
           this.formula_representation = `${this.configurating_tag} = ${obj['formula']}`
           is_tag_saved = true
           this.distinct_tags_selected = obj["distinct_columns"]
+          this.is_it_final_tag = obj["is_it_final_tag"]
           break
         }
       }
@@ -573,18 +508,22 @@ export class FinalComponent implements OnInit {
         this.formula_representation = ""
         this.dropped_tags = []
         this.distinct_tags_selected = []
+        this.is_it_final_tag = false
       }
     }
   }
 
   onDrop(event: CdkDragDrop<object[]>) {  
+    console.log("Hi Drop event : ",event);
+    
+
+
     if (event.previousContainer.data === event.container.data) { 
-      // moveItemInArray(
-      //   event.container.data, 
-      //   event.previousIndex, 
-      //   event.currentIndex
-      // );
-      console.log("Hi this is test ");
+      moveItemInArray(
+        event.container.data, 
+        event.previousIndex, 
+        event.currentIndex
+      ); 
       
     } else { 
       transferArrayItem(
@@ -852,6 +791,7 @@ export class FinalComponent implements OnInit {
             tag["formula_array"] = formula_array
             exists = true ,
             tag["distinct_columns"] = this.distinct_tags_selected
+            tag["is_it_final_tag"] = this.is_it_final_tag
           }
         }
         if(!exists){
@@ -860,7 +800,8 @@ export class FinalComponent implements OnInit {
             name : `${this.configurating_tag}`,
             formula : formula,
             formula_array : formula_array,
-            distinct_columns : this.distinct_tags_selected
+            distinct_columns : this.distinct_tags_selected,
+            is_it_final_tag : this.is_it_final_tag
           })
         }
 
@@ -879,21 +820,23 @@ export class FinalComponent implements OnInit {
 
 
       if(is_formula_valid){
+        console.log("Formula Info : ", this.formula_info);
+        
         let arr = formula.split(" ") 
 
         let op1 = ["+","-"]
         let op2 = ["*", "/"]
         let is_only_one_type = undefined
         let parent = {
-          "name" : "DGR",
+          "name" : this.formula_name,
           "type" : "continuous",
           "interval_type" : "time",
           "time_column" : "time",
-          "formula_name" : this.formula_name,
-          "interval_start" : 900,
-          "interval_value" : 86400,
-          "result_collection" : "Archive-DGR",
-          "datasource_id" : "data-source-1659424377",
+          "formula_name" : this.configurating_tag,
+          "interval_start" : this.formula_info["start_from"] || 1,
+          "interval_value" : this.formula_info["interval"] || 600,
+          "result_collection" : this.formula_info["result_collection"],
+          "datasource_id" : this.datasource_id || -1,
           "operands" : []
         }
  
@@ -1172,8 +1115,14 @@ export class FinalComponent implements OnInit {
 
         } 
 
+
+        this.backend_data.push(parent)
+
       }
     }
+    
+
+    console.log("Saved jsons are : ", this.backend_data)
   }
 
   
@@ -1336,6 +1285,7 @@ export class FinalComponent implements OnInit {
         console.log("Post Response is : " ,Response)
         if(Response["resp"]=="success"){  
           console.log("Formula Saved Success : ", Response)
+          this.saveBackendFormulasData()
           window.alert("Saved Formula successfully")
         }
         else{
@@ -1349,5 +1299,39 @@ export class FinalComponent implements OnInit {
 
 
     }
+  }
+
+  onChangeFinalTag = (event) => {
+    if(event.target.value=="False") this.is_it_final_tag = false;
+    else this.is_it_final_tag = true;
+  }
+
+
+  saveBackendFormulasData = () =>{
+    if(this.backend_data.length == 0){
+      return window.alert("No Tags added to save. Please add at least 1 tag to proceed.")
+    }
+
+    let url = ""
+    let request_body = {
+      "name" : this.formula_name,
+      "data" : this.backend_data
+    }
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type':  'application/json'
+      })
+    };
+
+    this.http.post(url,request_body,httpOptions).subscribe( (Response) => {  
+      console.log("Post Response is : " ,Response)
+      if(Response["resp"]=="success"){  
+         
+        window.alert("Backend Data Saved successfully")
+      }
+      else{
+        window.alert("Formula cannot be saved : invalid data")
+      }
+    });
   }
 }

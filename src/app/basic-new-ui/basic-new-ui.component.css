@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Poppins:wght@300&display=swap");
+:root {
+  --blue: #1e90ff;
+  --whitebg: #00000019;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main { 
+  height: 100vh;
+  z-index: -1;
+  background: #00000019;
+}
+
+.main .details {
+  background: white;
+  z-index: 1;
+  padding: 25px;
+  height: 510px;
+  width: 400px;
+}
+
+
+.details .save_btn{
+  width: 100%;
+  background: rgb(0, 115, 10); 
+  color: white;
+}
+
+.main .details h4 {
+  /* border: 1px solid black; */
+  margin-bottom: 34px; 
+
+}
+
+.main .details h4 span {
+  border-bottom: 3px solid rgb(138, 157, 251);
+  /* letter-spacing: 1.075px; */
+  /* font-style: italic; */
+  font-size: large;
+  padding: 8px 0px;
+}
+
+.form-group {
+  display: block;
+  padding: 14px 0px;
+  max-width: 350px;
+}
+
+.form-group label {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+
+.form-group input,
+textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group input,
+span,
+textarea {
+  font-size: 12px; 
+  padding: 12px;
+  border: 0;
+  outline: none;
+  border-radius: 4px;
+}
+
+.form-group span {
+  display: inline-block;
+  position: absolute;
+  margin-top: -60px;
+  color: transparent;
+  transition: all 0.1s ease-in-out;
+}
+
+.form-group label:focus-within {
+  border-color: blue;
+}
+
+.form-group label:focus-within span,
+.form-group label input:not(:placeholder-shown) + span,
+.form-group label textarea:not(:placeholder-shown) + span {
+  font-size: 12px;
+  background-color: white;
+  padding: 0 4px;
+  color: black;
+  margin: -50px 0 0 10px;
+  font-weight: 600;
+}
+
+.form-group label textarea:focus + span,
+.form-group label textarea:not(:placeholder-shown) + span {
+  margin-top: -96px;
+}
+
+.form-group select {
+  border-radius: 5px;
+  border: 1px solid rgb(197, 197, 197);
+}

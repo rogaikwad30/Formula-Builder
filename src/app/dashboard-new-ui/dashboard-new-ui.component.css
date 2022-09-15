@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Poppins:wght@300&display=swap");
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.formulaBuilder{ 
+    background: rgba(0, 0, 0, 0.098);
+    min-height: 100vh;
+    z-index: -1;
+    padding: 40px 225px;
+}
+
+
+.formulaBuilder .content{
+    background: white; 
+    /* box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), -1px -1px 1px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+    border-radius: 2.3px;
+    min-height: 500px;
+    width: 100%; 
+}
+
+
+.formulaBuilder .content .headline{
+    background: rgb(215, 240, 255);  
+}
+
+.headline b{
+    position: absolute;
+    left: 14px; 
+    letter-spacing: 1.2px;  
+    font-size: large; 
+}
+ 
+
+.content .buttons .box{
+    position: absolute;
+    left: 10px;
+}
+
+.content .buttons .box button{ 
+    margin-right: 12px; 
+    z-index: 1;
+    font-size: small;
+}
+
+.content .buttons .box .del{
+    color: red;
+} 
+
+.formulaBuilder .existingList .items, .formulaBuilder .treeView .items{  
+    border: 3px solid rgb(214, 211, 211);
+    height: calc(100% - 25px);  ;
+    width: calc(100% - 14px);  
+    display: block;
+}
+ 
+.existingList .items .item {
+    /* border: 1px dashed blue;  */
+    border-radius: 8px;
+    border-bottom: 2px solid rgb(159, 202, 230);
+    font-size: small;
+    padding: 12px 20px;
+    margin : 4px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.existingList .items .item a{
+    margin: 4px;
+}
+
+.existingList .items .item a i{
+    font-family:  "Font Awesome 5 Free"; font-weight: 400; content: "\f1ea";
+    font-size: 16px;
+}
+
+
+
+.content .exists .line p{
+    position: absolute;  
+    left: 14px;
+}
+
+.treeView .text{
+    border-bottom: 3px solid rgb(214, 211, 211); 
+    display: block; 
+    text-align: center; 
+    padding: 10px 0px;
+}
+
+canvas { 
+    outline: none;
+    border: none;
+}

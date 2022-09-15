@@ -515,9 +515,7 @@ export class FinalNewUiComponent implements OnInit {
 
   onDrop(event: CdkDragDrop<object[]>) {  
     console.log("Hi Drop event : ",event);
-    
-
-
+     
     if (event.previousContainer.data === event.container.data) { 
       moveItemInArray(
         event.container.data, 

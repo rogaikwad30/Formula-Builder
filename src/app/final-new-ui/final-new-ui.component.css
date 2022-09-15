@@ -100,6 +100,10 @@
     padding: 12px 0px;
 }
 
+.tags section , .aggregators , .operators{
+  overflow: auto;
+}
+
 
 .tags .tag{ 
     box-shadow: 1px 1px 1px rgb(216, 210, 210), -1px  -1px 1px rgb(216, 210, 210);

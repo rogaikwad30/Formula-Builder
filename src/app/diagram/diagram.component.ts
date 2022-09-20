@@ -27,6 +27,12 @@ export class DiagramComponent implements OnInit {
 
 
   public ngAfterViewInit(){
+    $(go.Node, "Auto", new go.Binding("location", "loc", go.Point.parse),
+    $(go.Shape, "Ellipse", { fill: "white" }),
+    $(go.TextBlock,
+      new go.Binding("text", "key"))
+  );
+  
     this.diagram = $(go.Diagram, 'myDiagramDiv',
       {
         layout:

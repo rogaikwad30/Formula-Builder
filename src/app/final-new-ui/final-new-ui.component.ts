@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
-import { CdkDragDrop, moveItemInArray,transferArrayItem} from '@angular/cdk/drag-drop';
+import { CdkDragDrop, moveItemInArray,transferArrayItem} from '@angular/cdk/drag-drop'; 
 
 
 @Component({
@@ -18,10 +18,12 @@ export class FinalNewUiComponent implements OnInit {
   backend_data = []
   formula_info = {}
   is_it_final_tag = false
+  collection_name = ""
   // using for saving data in formulas collection later
 
 
   tag_name = "";
+  time_col = "";
   formula_id = "";
 
   datasource_id = ""
@@ -432,6 +434,7 @@ export class FinalNewUiComponent implements OnInit {
                 this.saved_tags_copy = JSON.parse(JSON.stringify(Response["data"]["saved_tags"]))
                 this.tags.derived_tags = JSON.parse(JSON.stringify(Response["data"]["saved_tags"])) 
                 this.formula_info = Response["data"]
+                this.time_col = Response["data"]["time_column"]
               }
             } 
             else{
@@ -469,6 +472,7 @@ export class FinalNewUiComponent implements OnInit {
 
         console.log("Selected Ds : ",obj);
         this.datasource_id = obj["id"]
+        this.collection_name = collection.value
         
       }
     }
@@ -829,14 +833,18 @@ export class FinalNewUiComponent implements OnInit {
           "name" : this.formula_name,
           "type" : "continuous",
           "interval_type" : "time",
-          "time_column" : "time",
+          "time_column" : this.time_col,
           "formula_name" : this.configurating_tag,
           "interval_start" : this.formula_info["start_from"] || 1,
           "interval_value" : this.formula_info["interval"] || 600,
           "result_collection" : this.formula_info["result_collection"],
           "datasource_id" : this.datasource_id || -1,
-          "operands" : []
+          "operands" : [],
+          "collection_name" : this.collection_name
         }
+
+        console.log("Hey : ", parent);
+        
  
         for(let i of arr){ 
           
@@ -1116,6 +1124,9 @@ export class FinalNewUiComponent implements OnInit {
 
         this.backend_data.push(parent)
 
+        console.log("Backend Array : ", this.backend_data);
+        
+
       }
     }
     
@@ -1228,56 +1239,12 @@ export class FinalNewUiComponent implements OnInit {
       const request_body = {
         // "_id" : this.formula_id,
         "saved_tags" : this.tags.saved_tags,
+        "time_column": this.time_col,
         "data" : {}
-      }
+      } 
 
-
-      // process request body to form json which can be utilized by the formula calculator service 
-      // we need to save both data needed for front-end as well as backend service for simplicity 
-
-      
       console.log("Process : ", this.tags.saved_tags)
-
-
-     
-
-      // let parent = {
-      //   "name" : "tagName1{aggr-1} - tagName2{aggr-2}",
-      //   "type" : "computed",
-      //   "operator" : "subtraction",
-      //   "operands" : [
-      //     tag_plus_aggregator_operand,
-      //     tag_plus_aggregator_operand
-      //   ]
-      // }
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
       console.log("Posting : " ,request_body)
       this.http.post(url,request_body,httpOptions).subscribe( (Response) => {  
         console.log("Post Response is : " ,Response)
@@ -1310,11 +1277,14 @@ export class FinalNewUiComponent implements OnInit {
       return window.alert("No Tags added to save. Please add at least 1 tag to proceed.")
     }
 
-    let url = ""
+    let url = "http://localhost:5000/save-all-formulas"
     let request_body = {
       "name" : this.formula_name,
       "data" : this.backend_data
     }
+
+    console.log("Backend Req : ", this.backend_data);
+    
     const httpOptions = {
       headers: new HttpHeaders({
         'Content-Type':  'application/json'
@@ -1332,4 +1302,11 @@ export class FinalNewUiComponent implements OnInit {
       }
     });
   }
+
+
+
+  onChangeTimeCol = (event) => {
+    this.time_col = event.target.value
+  }
+
 }

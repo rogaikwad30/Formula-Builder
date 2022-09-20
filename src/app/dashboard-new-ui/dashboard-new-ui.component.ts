@@ -18,8 +18,14 @@ export class DashboardNewUiComponent implements OnInit {
   ngOnInit(): void {
     this.http.get('http://localhost:5000/formulas').subscribe( (Response) => {  
       if(Response['resp'] == "success"){
+        console.log("Resp : ", Response)
         this.formulas_list = Response["data"]
+        this.onOpenTreeView(Response["data"][1]["_id"])
       } 
+      else{
+        console.log("REs : ",Response); 
+        return window.alert("Error fetching formulas")
+      }
     });
   }
 
@@ -34,16 +40,12 @@ export class DashboardNewUiComponent implements OnInit {
     });
   }
 
-  
-
   constructGoJSFormattedData = (final_tag,final_arr=[],parentKey=-1) => {
-    // 1st level - name -  2nd - formula array
-
     if(parentKey==-1){
       parentKey = 1
       final_arr.push({ 
         'key': parentKey, 
-        'name': `${final_tag["name"]} [ ${final_tag["formula"]} ]`
+        'name': `${final_tag["name"]} = [${final_tag["formula"]}]`
       })
     }
     
@@ -53,10 +55,9 @@ export class DashboardNewUiComponent implements OnInit {
         is_final_level = false
         final_arr.push({ 
           'key': final_arr.length+1, 
-          'name': `${obj["name"]} [ ${obj["formula"]} ]`,
+          'name': `${obj["name"]} = [${obj["formula"]}]`,
           'parent': parentKey
         })
-
 
         final_arr = this.constructGoJSFormattedData(obj,final_arr,final_arr.length)
       }
@@ -89,8 +90,4 @@ export class DashboardNewUiComponent implements OnInit {
       }
     }
   }
-
-
-  
-
 }

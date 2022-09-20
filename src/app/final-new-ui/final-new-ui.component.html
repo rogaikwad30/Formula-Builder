@@ -75,11 +75,13 @@
 
         <mat-grid-list cols="8" class="final" rowHeight="450px" class="row3" cdkDropListGroup>
             <mat-grid-tile colspan="2" class="tags" >
-                <section>
+                <section class="example-container">
                     <div
                     cdkDropList
-                    [cdkDropListData]="tags.datasource_tags">
-                        <span class="tag" *ngFor="let obj of tags.datasource_tags" cdkDrag>
+                    [cdkDropListData]="tags.datasource_tags"
+                    class="example-list"
+                    >
+                        <span class="tag example-box" *ngFor="let obj of tags.datasource_tags" cdkDrag>
                             {{obj["name"]}}
                         </span> 
                     </div>
@@ -103,16 +105,16 @@
             <mat-grid-tile colspan="4" class="playzone">
                <section class="dragzone" >
                    <section style=" 
-                   height: 100%;">
+                   height: 100%;" class="example-container">
                        <div
                        style=" 
                        height: 100%;" 
-                       class="dropArea" 
+                       class="dropArea example-list" 
                        cdkDropList
                        (cdkDropListDropped)="onDrop($event)"
                        [cdkDropListData]="dropped_tags"
                        >
-                            <small class="item" cdkDrag
+                            <small class="item example-box" cdkDrag
                              *ngFor="let obj of dropped_tags">
                                 {{obj["name"]}}
                             </small> 
@@ -121,12 +123,12 @@
                </section>
 
 
-               <section>
-                    <section class="aggregators"
+               <section class="example-container">
+                    <section class="aggregators example-list"
                     cdkDropList
                     [cdkDropListData]="aggregators"
                     >
-                        <small class="item" *ngFor="let aggr of aggregators" cdkDrag>
+                        <small class="item example-box" *ngFor="let aggr of aggregators" cdkDrag>
                             {{aggr.name}}
                         </small>
                     </section>
@@ -161,6 +163,13 @@
                         <label>
                             <input type="text"  placeholder="Enter tagname" (change)="onChangeName($event)" value="{{tag_name}}">
                             <span>TagName</span>
+                        </label>
+                    </div> 
+
+                    <div class="form-group">
+                        <label>
+                            <input type="text"  placeholder="Enter time column" (change)="onChangeTimeCol($event)" value="{{time_col}}">
+                            <span>Sort Time Column</span>
                         </label>
                     </div> 
 

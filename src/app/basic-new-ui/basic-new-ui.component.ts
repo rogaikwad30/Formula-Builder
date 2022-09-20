@@ -34,9 +34,9 @@ export class BasicNewUiComponent implements OnInit {
               console.log("Resp : ",Response)
               
               // set up interval configurartion for ui
-              this.start_from_obj = Response["start_from"] || ""
-              this.interval = Response["interval"] || ""
-              
+              this.start_from_obj = Response["data"]["start_from_obj"] || ""
+              this.interval = Response["data"]["interval"] || ""
+              this.start_from_ep = Response["data"]["start_from"]
             } 
             else{
               window.location.href = "/"
@@ -74,7 +74,7 @@ export class BasicNewUiComponent implements OnInit {
     this.http.post(url,request_body,httpOptions).subscribe( (Response) => {  
       console.log("Post Response is : " ,Response)
       if(Response["resp"]=="success"){
-       window.location.href = "/final-new-ui?_id=" + Response["_id"] 
+       window.location.href = "/final-new-ui?_id=" + Response ["_id"] 
       }
     });
 

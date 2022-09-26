@@ -140,9 +140,16 @@
                     cdkDropList
                         [cdkDropListData]="operators"
                         >
-                        <small class="item" *ngFor="let obj of operators"  cdkDrag>
-                            {{obj["name"]}}
-                        </small> 
+                        <small class="item" *ngFor="let obj of operators" cdkDrag>
+                            <p *ngIf="obj['type']=='operator'">
+                                {{obj["name"]}} 
+                            </p>
+
+
+                            <p *ngIf="obj['type']=='constant'">
+                                <input type="number" placeholder="constant" (change)="onChangeConstant($event)">
+                            </p>
+                        </small>
                     </section>
                </section>
            
@@ -172,6 +179,28 @@
                             <span>Sort Time Column</span>
                         </label>
                     </div> 
+
+                    <!-- <div class="form-group">
+                        <label>
+                            <input type="text"  placeholder="Enter interval for tag" (change)="onChangeTimeCol($event)" value="{{time_col}}">
+                            <span>Sort Time Column</span>
+                        </label>
+                    </div>  -->
+
+
+                    <label> 
+                        <span>Select  Distinct Tags</span>
+                    </label> 
+                    <div class="form-group"> 
+                        <!-- <p class="selected" *ngFor="let obj of distinct_tags_selected"  > 
+                            {{obj}}
+                        </p>  -->
+                            <select name="distinct" id="distinct" multiple (change)="onSelectDistinctTag()" [(ngModel)]="distinct_tags_selected">  
+                                <option  *ngFor="let obj of selectable_tags" value="{{obj}}"> 
+                                    {{obj}}
+                                </option>   
+                            </select>  
+                    </div>
 
 
                     <div class="btns">

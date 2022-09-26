@@ -203,12 +203,20 @@
   }
   
   .form-group input,
-  textarea {
-    display: block;
+  textarea,.form-group select {
+    display: block; 
     width: 100%;
     box-sizing: border-box;
   }
   
+
+  .form-group select option{
+    height: 26px; 
+    border: 1px solid rgb(245, 238, 238);
+    margin: 8px;
+    padding: 4px;
+  }
+
   .form-group input,
   span,
   textarea {
@@ -241,6 +249,7 @@
     margin: -52.5px 0 0 10px;
     font-weight: 600;
   }
+ 
     
   
   .is_it_final{ 

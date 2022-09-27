@@ -79,10 +79,12 @@ export class DashboardNewUiComponent implements OnInit {
     
     for(let obj of saved_tags){
       if(obj["is_it_final_tag"]){
-        console.log("Construct formula model here ")
+        console.log("Construct formula model here - ")
         console.log(obj);
 
         let array = this.constructGoJSFormattedData(obj)
+
+      
 
         this.model = new go.TreeModel(array)
 

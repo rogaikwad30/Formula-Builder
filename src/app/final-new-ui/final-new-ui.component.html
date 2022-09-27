@@ -50,7 +50,7 @@
 
         <hr>
 
-        <mat-grid-list cols="4" rowHeight="120px" class="row3" style="
+        <mat-grid-list cols="4" rowHeight="220px" class="row3" style="
         border-bottom : 1px solid rgb(216, 210, 210);">
             <mat-grid-tile colspan="1">
                 <div class="ds">
@@ -67,6 +67,11 @@
                 <h6 style="font-size: 16px;">
                     {{formula_representation}}
                 </h6>
+
+                <section style="height: 220px; width: 500px; position: absolute; right: 0; margin: 0px 10px;">
+                    <app-diagram [model]="model"></app-diagram>
+                </section>
+
             </mat-grid-tile>
 
         </mat-grid-list>
@@ -148,6 +153,10 @@
 
                             <p *ngIf="obj['type']=='constant'">
                                 <input type="number" placeholder="constant" (change)="onChangeConstant($event)">
+                            </p>
+
+                            <p *ngIf="obj['type']=='bracket'">
+                                {{obj["name"]}} 
                             </p>
                         </small>
                     </section>

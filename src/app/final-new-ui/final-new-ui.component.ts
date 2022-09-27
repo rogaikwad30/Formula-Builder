@@ -1027,26 +1027,76 @@ export class FinalNewUiComponent implements OnInit {
       let valid_aggregate_time_based_formula_array = this.validateAggregateTimeBasedFormulaWithBrackets(this.dropped_tags)
       
       if(valid_aggregate_time_based_formula_array){
-        // replace brackets 
         this.getJsonForEachSubFormulaBetweenBracketsAggregateTimeBasedFormula(valid_aggregate_time_based_formula_array)
 
         console.log("You've the json as - ");
         console.log();
         console.log(this.aggregate_final_json);
         console.log();
-        
-        
-        
-        
 
-        // console.log("Validated array is - ", valid_aggregate_time_based_formula_array);
-        
+        let formula = ""
+        let formula_array = valid_aggregate_time_based_formula_array
 
-        // replace divisions 
+        if(this.aggregate_final_json){
+          for (let obj of formula) {
+            if (obj['type'] == 'aggregator') {
+              formula += `{${obj['name']}}`;
+            } else if (obj['type'] == 'operator') {
+              formula += ` ${obj['name']} `;
+            } else {
+              formula += obj['name'];
+            }
+          }
+          window.alert('Formula is : ' + formula);
+          this.formula_representation = `${this.configurating_tag} = ${formula}`;
+          let exists = false;
+          for (let tag of this.tags.saved_tags) {
+            if (tag['name'] == this.configurating_tag) {
+              tag['formula'] = formula;
+              tag['data'] = this.aggregate_final_json
+              tag['formula_array'] = formula_array;
+              (exists = true),
+                (tag['distinct_columns'] = this.distinct_tags_selected);
+              tag['is_it_final_tag'] = this.is_it_final_tag;
+            }
+          }
+          if (!exists) {
+            this.tags.saved_tags.push({
+              type: 'derived',
+              name: `${this.configurating_tag}`,
+              formula: formula,
+              formula_array: formula_array,
+              distinct_columns: this.distinct_tags_selected,
+              is_it_final_tag: this.is_it_final_tag,
+              data: this.aggregate_final_json
+            });
+          }
 
-        // replace multipliers 
+          this.saved_tags_copy = JSON.parse(JSON.stringify(this.tags.saved_tags));
 
-        // go js view
+          this.update_tag(this.configurating_tag);
+
+          this.onReset();
+
+          let parent = {
+            name: this.formula_name,
+            type: 'continuous',
+            interval_type: 'time',
+            time_column: this.time_col,
+            formula_name: this.configurating_tag,
+            interval_start: this.formula_info['start_from'] || 1,
+            interval_value: this.formula_info['interval'] || 600,
+            result_collection: this.formula_info['result_collection'],
+            datasource_id: this.datasource_id || -1,
+            operands: [this.aggregate_final_json],
+            // aggregation: "sum",
+            collection_name: this.collection_name,
+            distinct_columns: this.distinct_tags_selected,
+          };
+
+          this.backend_data.push(parent)
+
+        }        
       }
 
       // let i = 0;
@@ -1509,8 +1559,14 @@ export class FinalNewUiComponent implements OnInit {
       }
     }
 
+    
+
     if (is_only_one_type) {
       let data = {};
+
+      if(processed_array.length==1) return processed_array[0]
+
+      
 
       if (processed_array.length > 2) {
         let operator = processed_array[1];
@@ -1949,6 +2005,7 @@ export class FinalNewUiComponent implements OnInit {
     return this.generate_json_by_removing_multipliers(temp_arr);
   };
 
+  final_absolute_json = undefined
   getJsonForEachSubFormulaBetweenBrackets = (array) => {
     let newArr = []
     if(array.length == 0){
@@ -1975,6 +2032,7 @@ export class FinalNewUiComponent implements OnInit {
 
         let json = this.getAbsoluteFormulaJson(reverse_array)
         console.log("JSON - ",json)
+        this.final_absolute_json = json
         newArr.push(json)
 
         i++;
@@ -1990,7 +2048,18 @@ export class FinalNewUiComponent implements OnInit {
     
       if(test) {
         const final_data = this.getAbsoluteFormulaJson(newArr)
-        this.constructGoJSFormattedData0(final_data)
+        if(final_data){
+          this.final_absolute_json = final_data
+        }
+        console.log("Here's your json ");
+        console.log();
+        console.log(this.final_absolute_json);
+        console.log();
+        
+        
+        
+        
+        this.constructGoJSFormattedData0(this.final_absolute_json)
       }
   }
 
@@ -2455,6 +2524,7 @@ export class FinalNewUiComponent implements OnInit {
           is_tag_saved = true;
           this.distinct_tags_selected = obj['distinct_columns'];
           this.is_it_final_tag = obj['is_it_final_tag'];
+          this.constructGoJSFormattedData0(obj['data'])
           break;
         }
       }
@@ -2483,7 +2553,12 @@ export class FinalNewUiComponent implements OnInit {
         event.currentIndex
       );
 
-      // this.getJsonForEachSubFormulaBetweenBrackets(this.dropped_tags)
+      if(this.frequency==1){
+        this.getJsonForEachSubFormulaBetweenBrackets(this.dropped_tags)
+      }
+      else{
+        this.getJsonForEachSubFormulaBetweenBracketsAggregateTimeBasedFormula(this.dropped_tags)
+      }
     }
 
     this.tags.datasource_tags = JSON.parse(

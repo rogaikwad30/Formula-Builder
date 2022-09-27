@@ -100,6 +100,259 @@ export class FinalNewUiComponent implements OnInit {
       frequency: 60,
       __v: 0,
     },
+    { 
+      "conf" : {
+          "collection" : "Archive-raw_location_data",
+          "path" : "FTSCADAvantage",
+          "dbname" : "FTSCADAvantage",
+          "table" : "raw_location_data",
+          "db_table" : "analogview",
+          "columninfo" : [ 
+              {
+                  "name" : "name",
+                  "type" : "text",
+                  "property" : "unique",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "description",
+                  "type" : "text",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "value",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "units",
+                  "type" : "text",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "inserttimestamp",
+                  "type" : "time",
+                  "property" : "sort",
+                  "format" : "%d-%b-%Y %H:%M:%S.%f",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false,
+                  "realtime" : true
+              }, 
+              {
+                  "name" : "ga",
+                  "type" : "text",
+                  "property" : "derived-indexed",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "type",
+                  "type" : "text",
+                  "property" : "derived-indexed",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "location",
+                  "type" : "text",
+                  "property" : "derived-indexed",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "instrument",
+                  "type" : "text",
+                  "property" : "derived-indexed",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "make",
+                  "type" : "text",
+                  "property" : "derived-indexed",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "parameter",
+                  "type" : "text",
+                  "property" : "derived-indexed",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "location-type",
+                  "type" : "text",
+                  "property" : "derived-indexed",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "make-instrument",
+                  "type" : "text",
+                  "property" : "derived-indexed",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "CGS-instrument",
+                  "type" : "text",
+                  "property" : "derived-indexed",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "userstring01",
+                  "type" : "text",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "userstring02",
+                  "type" : "text",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "userstring03",
+                  "type" : "text",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "userstring04",
+                  "type" : "text",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "userstring05",
+                  "type" : "text",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "userstring06",
+                  "type" : "text",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "userstring07",
+                  "type" : "text",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "userstring08",
+                  "type" : "text",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "userstring09",
+                  "type" : "text",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }
+          ],
+          "username" : "SYSTEM",
+          "password" : "tgabb12345$"
+      }, 
+      "datatype" : "db",
+      "requesttype" : "data",
+      "id" : "data-source-1644578327",
+      "type" : "Archive",
+      "clientip" : "localhost",
+      "dstype" : "SCADAvantage",
+      "__v" : 0,
+      "connectorname" : "Advantage SCADA",
+      "frequency" : 1800
+  },
     {
       conf: {
         collection: 'Archive-Data',
@@ -513,9 +766,11 @@ export class FinalNewUiComponent implements OnInit {
     let op2 = ['*', '/'];
     let is_only_one_type = undefined;
 
+    let cnt = 0
     for (let i of arr) {
       i = i['name'];
       if (op1.includes(i)) {
+        cnt++;
         if (!is_only_one_type || is_only_one_type == op1) {
           is_only_one_type = op1;
         } else {
@@ -524,6 +779,7 @@ export class FinalNewUiComponent implements OnInit {
         }
       }
       if (op2.includes(i)) {
+        cnt++;
         if (!is_only_one_type || is_only_one_type == op2) {
           is_only_one_type = op2;
         } else {
@@ -533,12 +789,16 @@ export class FinalNewUiComponent implements OnInit {
       }
     }
 
+    if(cnt==0){
+      return op1
+    }
+
     return is_only_one_type;
   };
 
   constructGoJSFormattedData = (final_tag,final_arr=[],parentKey=-1) => {
   
-    console.log("Final Inp Data - ", final_tag ,final_arr);
+    // console.log("Final Inp Data - ", final_tag ,final_arr);
     
     if(parentKey==-1){
       parentKey = 1
@@ -551,8 +811,6 @@ export class FinalNewUiComponent implements OnInit {
       if("operands" in final_tag){
         for(let i=0;i<final_tag["operands"].length;i++){
           let obj = final_tag["operands"][i]
-    
-          console.log("Obj - ",obj);
           
           if(obj["type"]=="computed"){ 
             final_arr.push({ 
@@ -748,10 +1006,477 @@ export class FinalNewUiComponent implements OnInit {
     //   arr.push(data[i])
     // }
 
+    console.log("Forming Tree view - ", data);
+    
+
     let array = this.constructGoJSFormattedData(data)
 
     this.model = new go.TreeModel(array)
   }
+
+  
+  onSaveTag = () => {
+    if (this.configurating_tag == 'NA') {
+      return window.alert('Please Select Tag First');
+    } else {
+      let isRequestHandled = this.handleAbsoluteDataLoggingFormulas();
+      console.log("Abs req res - ",isRequestHandled );
+      
+      if (isRequestHandled) return;
+
+      let valid_aggregate_time_based_formula_array = this.validateAggregateTimeBasedFormulaWithBrackets(this.dropped_tags)
+      
+      if(valid_aggregate_time_based_formula_array){
+        // replace brackets 
+        this.getJsonForEachSubFormulaBetweenBracketsAggregateTimeBasedFormula(valid_aggregate_time_based_formula_array)
+
+        console.log("You've the json as - ");
+        console.log();
+        console.log(this.aggregate_final_json);
+        console.log();
+        
+        
+        
+        
+
+        // console.log("Validated array is - ", valid_aggregate_time_based_formula_array);
+        
+
+        // replace divisions 
+
+        // replace multipliers 
+
+        // go js view
+      }
+
+      // let i = 0;
+      // let is_formula_valid = true;
+      // let formula_array = [];
+      // let formula = '';
+
+      // // construct valid formula else say invalid formula
+      // while (i < this.dropped_tags.length) {
+      //   if (i == 0) {
+      //     if (
+      //       this.dropped_tags[i]['type'] == 'aggregator' ||
+      //       this.dropped_tags[i]['type'] == 'operator'
+      //     ) {
+      //       is_formula_valid = false;
+      //       break;
+      //     } else {
+      //       formula_array.push(this.dropped_tags[i]);
+      //     }
+      //   } else {
+      //     let last_obj = formula_array[formula_array.length - 1];
+      //     let next_type = '';
+      //     if (last_obj['type'] == 'aggregator') {
+      //       next_type = 'operator';
+      //     } else if (last_obj['type'] == 'operator') {
+      //       next_type = 'tag||constant';
+      //     } else if (last_obj['type'] == 'constant') {
+      //       next_type = 'operator';
+      //     } else {
+      //       next_type = 'aggregator';
+      //     }
+
+      //     if (
+      //       (next_type == this.dropped_tags[i]['type'] &&
+      //         next_type == 'aggregator') ||
+      //       (next_type == this.dropped_tags[i]['type'] &&
+      //         next_type == 'operator')
+      //     ) {
+      //       formula_array.push(this.dropped_tags[i]);
+      //     } else if (
+      //       next_type != this.dropped_tags[i]['type'] &&
+      //       next_type == 'tag||constant' &&
+      //       this.dropped_tags[i]['type'] != 'aggregator' &&
+      //       this.dropped_tags[i]['type'] != 'operator'
+      //     ) {
+      //       formula_array.push(this.dropped_tags[i]);
+      //     } else {
+      //       is_formula_valid = false;
+      //       break;
+      //     }
+      //   }
+      //   i++;
+      // }
+
+      // if (
+      //   formula_array.length == 0 ||
+      //   (formula_array[formula_array.length - 1]['type'] != 'aggregator' &&
+      //     formula_array[formula_array.length - 1]['type'] != 'constant')
+      // ) {
+      //   is_formula_valid = false;
+      // }
+
+      // // if invalid formula check with first as a default aggregator
+      // if (formula_array.length != 0 && !is_formula_valid) {
+      //   is_formula_valid = true;
+      //   formula_array = [];
+      //   let i = 0;
+      //   while (i < this.dropped_tags.length) {
+      //     if (i == 0) {
+      //       if (
+      //         this.dropped_tags[i]['type'] == 'aggregator' ||
+      //         this.dropped_tags[i]['type'] == 'operator'
+      //       ) {
+      //         is_formula_valid = false;
+      //         break;
+      //       } else {
+      //         formula_array.push(this.dropped_tags[i]);
+      //       }
+      //     } else {
+      //       let last_obj = formula_array[formula_array.length - 1];
+      //       let next_type = '';
+      //       if (last_obj['type'] == 'aggregator') {
+      //         next_type = 'operator';
+      //       } else if (last_obj['type'] == 'operator') {
+      //         next_type = 'tag||constant';
+      //       } else if (last_obj['type'] == 'constant') {
+      //         next_type = 'operator';
+      //       } else {
+      //         next_type = 'aggregator';
+      //       }
+
+      //       if (
+      //         (next_type == this.dropped_tags[i]['type'] &&
+      //           next_type == 'aggregator') ||
+      //         (next_type == this.dropped_tags[i]['type'] &&
+      //           next_type == 'operator')
+      //       ) {
+      //         formula_array.push(this.dropped_tags[i]);
+      //       } else if (
+      //         next_type != this.dropped_tags[i]['type'] &&
+      //         next_type == 'tag||constant' &&
+      //         this.dropped_tags[i]['type'] != 'aggregator' &&
+      //         this.dropped_tags[i]['type'] != 'operator'
+      //       ) {
+      //         formula_array.push(this.dropped_tags[i]);
+      //       } else {
+      //         if (
+      //           next_type == 'aggregator' &&
+      //           this.dropped_tags[i]['type'] == 'operator'
+      //         ) {
+      //           formula_array.push({
+      //             type: 'aggregator',
+      //             name: 'first',
+      //           });
+
+      //           formula_array.push(this.dropped_tags[i]);
+      //         } else {
+      //           console.log('Hi 3 ', i);
+      //           is_formula_valid = false;
+      //           break;
+      //         }
+      //       }
+      //     }
+      //     i++;
+      //   }
+      // }
+
+      // if (formula_array.length != 0 && is_formula_valid) {
+      //   if (
+      //     formula_array[formula_array.length - 1]['type'] != 'aggregator' &&
+      //     formula_array[formula_array.length - 1]['type'] != 'constant'
+      //   ) {
+      //     formula_array.push({
+      //       type: 'aggregator',
+      //       name: 'first',
+      //     });
+      //   }
+      // }
+
+      // // display formula logic and save new tag and update existing
+      // if (is_formula_valid) {
+      //   for (let obj of formula_array) {
+      //     if (obj['type'] == 'aggregator') {
+      //       formula += `{${obj['name']}}`;
+      //     } else if (obj['type'] == 'operator') {
+      //       formula += ` ${obj['name']} `;
+      //     } else {
+      //       formula += obj['name'];
+      //     }
+      //   }
+      //   window.alert('Formula is : ' + formula);
+      //   this.formula_representation = `${this.configurating_tag} = ${formula}`;
+      //   let exists = false;
+      //   for (let tag of this.tags.saved_tags) {
+      //     if (tag['name'] == this.configurating_tag) {
+      //       tag['formula'] = formula;
+      //       tag['formula_array'] = formula_array;
+      //       (exists = true),
+      //         (tag['distinct_columns'] = this.distinct_tags_selected);
+      //       tag['is_it_final_tag'] = this.is_it_final_tag;
+      //     }
+      //   }
+      //   if (!exists) {
+      //     this.tags.saved_tags.push({
+      //       type: 'derived',
+      //       name: `${this.configurating_tag}`,
+      //       formula: formula,
+      //       formula_array: formula_array,
+      //       distinct_columns: this.distinct_tags_selected,
+      //       is_it_final_tag: this.is_it_final_tag,
+      //     });
+      //   }
+
+      //   this.saved_tags_copy = JSON.parse(JSON.stringify(this.tags.saved_tags));
+
+      //   this.update_tag(this.configurating_tag);
+
+      //   this.onReset();
+      // } else {
+      //   window.alert('Invalid Formula');
+      // }
+
+      // // construct backend json for valid formula
+      // if (is_formula_valid) {
+      //   console.log('Formula Info : ', this.formula_info);
+
+      //   let arr = formula.split(' ');
+
+      //   let op1 = ['+', '-'];
+      //   let op2 = ['*', '/'];
+      //   let is_only_one_type = undefined;
+      //   let parent = {
+      //     name: this.formula_name,
+      //     type: 'continuous',
+      //     interval_type: 'time',
+      //     time_column: this.time_col,
+      //     formula_name: this.configurating_tag,
+      //     interval_start: this.formula_info['start_from'] || 1,
+      //     interval_value: this.formula_info['interval'] || 600,
+      //     result_collection: this.formula_info['result_collection'],
+      //     datasource_id: this.datasource_id || -1,
+      //     operands: [],
+      //     collection_name: this.collection_name,
+      //     distinct_columns: this.distinct_tags_selected,
+      //   };
+
+      //   for (let i of arr) {
+      //     if (op1.includes(i)) {
+      //       if (!is_only_one_type || is_only_one_type == op1) {
+      //         is_only_one_type = op1;
+      //       } else {
+      //         is_only_one_type = undefined;
+      //         break;
+      //       }
+      //     }
+      //     if (op2.includes(i)) {
+      //       if (!is_only_one_type || is_only_one_type == op2) {
+      //         is_only_one_type = op2;
+      //       } else {
+      //         is_only_one_type = undefined;
+      //         break;
+      //       }
+      //     }
+      //   }
+
+      //   let data = {};
+
+      //   if (arr.length == 1) {
+      //     is_only_one_type = true;
+      //   }
+      //   console.log('Only one type : ', is_only_one_type);
+      //   if (is_only_one_type) {
+      //     let json_arr = [];
+
+      //     for (let i of arr) {
+      //       if (op1.includes(i) || op2.includes(i)) {
+      //         json_arr.push(i);
+      //         continue;
+      //       }
+      //       let tag = i.split('{')[0];
+      //       let agg = i.split('{')[1].split('}')[0];
+
+      //       json_arr.push(this.generate_tag_plus_aggregator_operand(tag, agg));
+      //     }
+
+      //     if (json_arr.length > 2) {
+      //       data['name'] = '0+1';
+      //       data['type'] = 'computed';
+      //       if (json_arr[1] == '+') {
+      //         data['operator'] = 'addition';
+      //       } else if (json_arr[1] == '-') {
+      //         data['operator'] = 'subtraction';
+      //       } else if (json_arr[1] == '/') {
+      //         data['operator'] = 'division';
+      //       } else {
+      //         data['operator'] = 'multiplication';
+      //       }
+
+      //       data['operands'] = [json_arr[0], json_arr[2]];
+
+      //       let j = 2;
+
+      //       for (j = 2; j < json_arr.length - 1; j++) {
+      //         let temp = JSON.parse(JSON.stringify(data));
+
+      //         if (json_arr[j] == '+') {
+      //           data['operands'][0] = temp;
+      //           data['operands'][1] = json_arr[j + 1];
+      //           data['name'] = 'Result - ' + j;
+      //           data['type'] = 'computed';
+      //           data['operator'] = 'addition';
+      //         } else if (json_arr[j] == '-') {
+      //           data['operands'][0] = temp;
+      //           data['operands'][1] = json_arr[j + 1];
+      //           data['name'] = 'Result - ' + j;
+      //           data['type'] = 'computed';
+      //           data['operator'] = 'subtraction';
+      //         } else if (json_arr[j] == '*') {
+      //           data['operands'][0] = temp;
+      //           data['operands'][1] = json_arr[j + 1];
+      //           data['name'] = 'Result - ' + j;
+      //           data['type'] = 'computed';
+      //           data['operator'] = 'multiplication';
+      //         } else if (json_arr[j] == '/') {
+      //           data['operands'][0] = temp;
+      //           data['operands'][1] = json_arr[j + 1];
+      //           data['name'] = 'Result - ' + j;
+      //           data['type'] = 'computed';
+      //           data['operator'] = 'division';
+      //         }
+      //       }
+      //     } else if (json_arr.length == 2) {
+      //       data['name'] = '0+1';
+      //       data['type'] = 'computed';
+      //       if (json_arr[1] == '+') {
+      //         data['operator'] = 'addition';
+      //       } else if (json_arr[1] == '-') {
+      //         data['operator'] = 'subtraction';
+      //       } else if (json_arr[1] == '/') {
+      //         data['operator'] = 'division';
+      //       } else {
+      //         data['operator'] = 'multiplication';
+      //       }
+
+      //       data['operands'] = [json_arr[0], json_arr[2]];
+      //     } else if (json_arr.length == 1) {
+      //       data['name'] = '0+1';
+      //       data['type'] = 'computed';
+      //       data['operator'] = 'addition';
+      //       data['operands'] = [
+      //         json_arr[0],
+      //         {
+      //           name: '0',
+      //           type: 'constant',
+      //         },
+      //       ];
+      //     }
+
+      //     parent['operands'].push(data);
+      //     console.log('Final Data Object : ', parent);
+      //   } else {
+      //     let json_arr = [];
+      //     let temp_arr = [];
+      //     console.log('Test 01 ', arr);
+      //     for (let i of arr) {
+      //       if (op1.includes(i) || op2.includes(i)) {
+      //         json_arr.push(i);
+      //         continue;
+      //       }
+      //       // else if(typeof(Number(i)) == Number){
+
+      //       // }
+      //       let tag = i.split('{')[0];
+      //       let agg = i.split('{')[1].split('}')[0];
+
+      //       json_arr.push(this.generate_tag_plus_aggregator_operand(tag, agg));
+      //     }
+
+      //     if (json_arr.length > 2) {
+      //       console.log('Test 0 ', json_arr);
+
+      //       json_arr = this.generate_json_by_removing_divisions(json_arr);
+      //       json_arr = this.generate_json_by_removing_multipliers(json_arr);
+
+      //       console.log('Final Json Array at save : ');
+      //       console.log(json_arr);
+
+      //       data['name'] = '0+1';
+      //       data['type'] = 'computed';
+      //       if (json_arr[1] == '+') {
+      //         data['operator'] = 'addition';
+      //       } else if (json_arr[1] == '-') {
+      //         data['operator'] = 'subtraction';
+      //       } else if (json_arr[1] == '/') {
+      //         data['operator'] = 'division';
+      //       } else {
+      //         data['operator'] = 'multiplication';
+      //       }
+
+      //       data['operands'] = [json_arr[0], json_arr[2]];
+
+      //       let j = 2;
+
+      //       for (j = 2; j < json_arr.length - 1; j++) {
+      //         let temp = JSON.parse(JSON.stringify(data));
+
+      //         if (json_arr[j] == '+') {
+      //           data['operands'][0] = temp;
+      //           data['operands'][1] = json_arr[j + 1];
+      //           data['name'] = 'Result - ' + j;
+      //           data['type'] = 'computed';
+      //           data['operator'] = 'addition';
+      //         } else if (json_arr[j] == '-') {
+      //           data['operands'][0] = temp;
+      //           data['operands'][1] = json_arr[j + 1];
+      //           data['name'] = 'Result - ' + j;
+      //           data['type'] = 'computed';
+      //           data['operator'] = 'subtraction';
+      //         } else if (json_arr[j] == '*') {
+      //           data['operands'][0] = temp;
+      //           data['operands'][1] = json_arr[j + 1];
+      //           data['name'] = 'Result - ' + j;
+      //           data['type'] = 'computed';
+      //           data['operator'] = 'multiplication';
+      //         } else if (json_arr[j] == '/') {
+      //           data['operands'][0] = temp;
+      //           data['operands'][1] = json_arr[j + 1];
+      //           data['name'] = 'Result - ' + j;
+      //           data['type'] = 'computed';
+      //           data['operator'] = 'division';
+      //         }
+      //       }
+
+      //       parent['operands'].push(data);
+      //       console.log('Final Data Object - 2 : ', parent);
+      //     } else if (json_arr.length == 2) {
+      //       data['name'] = '0+1';
+      //       data['type'] = 'computed';
+      //       if (json_arr[1] == '+') {
+      //         data['operator'] = 'addition';
+      //       } else if (json_arr[1] == '-') {
+      //         data['operator'] = 'subtraction';
+      //       } else if (json_arr[1] == '/') {
+      //         data['operator'] = 'division';
+      //       } else {
+      //         data['operator'] = 'multiplication';
+      //       }
+
+      //       data['operands'] = [json_arr[0], json_arr[2]];
+      //     } else if (json_arr.length == 1) {
+      //       data['name'] = '0+1';
+      //       data['type'] = 'computed';
+      //       data['operator'] = 'addition';
+      //       data['operands'] = [
+      //         json_arr[0],
+      //         {
+      //           name: '0',
+      //           type: 'constant',
+      //         },
+      //       ];
+      //     }
+      //   }
+
+      //   this.backend_data.push(parent);
+
+      //   console.log('Backend Array : ', this.backend_data);
+      // }
+    }
+  };
+
 
   getAbsoluteFormulaJson = (array = []) => {
     const is_only_one_type =
@@ -923,52 +1648,512 @@ export class FinalNewUiComponent implements OnInit {
     }
   };
 
-  // getJsonForEachSubFormulaBetweenBrackets = (array,ans=[]) => {
-  //   let newArr = []
-  //   let test = false 
-  //   console.log("Input - ", array);
+  getAggregateFormulaJson = (array = []) => {
+    const is_only_one_type =
+      this.checkIfFormulaContainsOnlyOneTypeOpearations(array);
+
     
-  //   for(let i=0;i<array.length;){ 
-  //     if(array[i].name=="("){
-  //       i+=1;
-  //       test = true
-  //       let skip = 0
-  //       while(array[i].name!=')' || skip!=0){
-  //         if(array[i].name == '('){
-  //           skip++;
-  //         }
-  //         if(array[i].name == ')'){
-  //           skip--;
-  //         }
-           
-  //         newArr.push(array[i])
-  //         i++;
-  //       }
-  //     }
 
-  //     // else if (array[i].type == 'operator' || array[i].type == 'constant' || array[i].type!="bracket"){
-  //     //   ans.push(array[i])
-  //     // }
+    let processed_array = [];
+    for (let i=0;i<array.length;i++) {
+      if (array[i].type == 'operator') {
+        processed_array.push(array[i].name);
+      }
+      if (array[i].type != 'operator' && array[i].type != 'bracket') {
+        if (array[i].type == 'constant') {
+          processed_array.push({
+            name: array[i].name,
+            type: 'constant',
+          });
+        }
+        // it's a derived tag
+        else if (array[i].type == "computed"){
+          processed_array.push(array[i])
+        }
+        else {
+          // it's a tag
+          if (array[i].type != "aggregator" && array[i].type != "aggregate"){
+            let tag_aggr_json = this.generate_tag_plus_aggregator_operand(array[i].name,array[i+1].name)
+            i+=1;
 
-  //     if(newArr.length > 0){
-  //       this.getJsonForEachSubFormulaBetweenBrackets(newArr)
-  //       newArr = []
-  //     }
+            processed_array.push(tag_aggr_json)
+          }
+          else if (array[i].type == "aggregate"){
+            processed_array.push(array[i])
+          }
+        }
+      }
+    }
 
-  //     i++;
-  //   }
-  //   if(!test){
-  //     let json = this.getAbsoluteFormulaJson(array)
-  //     ans.push(json)
-  //     console.log("Ans - ", ans);
-  //   }
 
-  //   if(!newArr.length){
-  //     let json = this.getAbsoluteFormulaJson(newArr)
-  //     ans.push(json)
-  //     console.log("Ans - ", ans);
-  //   }
-  // }
+    
+    console.log("Handling - ", array ,processed_array, " MSESSAGE - ", is_only_one_type);
+
+    if(processed_array.length==0) return
+    if (is_only_one_type) {
+      let data = {};
+
+      if (processed_array.length > 2) {
+        let operator = processed_array[1];
+        let operand1 = processed_array[0];
+        let operand2 = processed_array[2];
+
+        data['name'] = operand1.name + operator + operand2.name;
+        data['type'] = 'computed';
+        if (operator == '+') {
+          data['operator'] = 'addition';
+        } else if (operator == '-') {
+          data['operator'] = 'subtraction';
+        } else if (operator == '/') {
+          data['operator'] = 'division';
+        } else {
+          data['operator'] = 'multiplication';
+        }
+
+        data['operands'] = [processed_array[0], processed_array[2]];
+
+        let j = 2;
+
+        for (j = 3; j < processed_array.length - 1; j++) {
+          let temp = JSON.parse(JSON.stringify(data));
+
+          if (processed_array[j] == '+') {
+            data['operands'][0] = temp;
+            data['operands'][1] = processed_array[j + 1];
+            data['name'] =
+              data['operands'][0].name + '+' + data['operands'][1].name;
+            data['type'] = 'computed';
+            data['operator'] = 'addition';
+          } else if (processed_array[j] == '-') {
+            data['operands'][0] = temp;
+            data['operands'][1] = processed_array[j + 1];
+            data['name'] =
+              data['operands'][0].name + '-' + data['operands'][1].name;
+            data['type'] = 'computed';
+            data['operator'] = 'subtraction';
+          } else if (processed_array[j] == '*') {
+            data['operands'][0] = temp;
+            data['operands'][1] = processed_array[j + 1];
+            data['name'] =
+              data['operands'][0].name + '*' + data['operands'][1].name;
+            data['type'] = 'computed';
+            data['operator'] = 'multiplication';
+          } else if (processed_array[j] == '/') {
+            data['operands'][0] = temp;
+            data['operands'][1] = processed_array[j + 1];
+            data['name'] =
+              data['operands'][0].name + '/' + data['operands'][1].name;
+            data['type'] = 'computed';
+            data['operator'] = 'division';
+          }
+        }
+      }
+      if (processed_array.length==2) {
+
+        let tag = processed_array[0].name;
+        let aggr = processed_array[1].name; 
+
+        data['name'] = tag + '{' + aggr + "}" ;
+        data['type'] = 'aggregate';
+
+        console.log("Hey - ",processed_array);
+        
+        return this.generate_tag_plus_aggregator_operand(tag,aggr)
+
+      }
+      if(processed_array.length ==1){
+        console.log("Hey zeroth return - ",processed_array);
+        return processed_array[0]
+      }
+
+
+      console.log("Simple JSON - ", data, processed_array);
+      // this.constructGoJSFormattedData0(data)
+      
+      return data
+    } else {
+      
+      processed_array =
+        this.generate_json_by_removing_divisions(processed_array);
+        
+      console.log("Removed divisions array - ", processed_array);
+      processed_array =
+        this.generate_json_by_removing_multipliers(processed_array);
+        
+      console.log("Removed multipliers array - ", processed_array);
+
+      let data = {};
+
+      if (processed_array.length > 2) {
+        let operator = processed_array[1];
+        let operand1 = processed_array[0];
+        let operand2 = processed_array[2];
+
+        data['name'] = operand1.name + operator + operand2.name;
+        data['type'] = 'computed';
+        if (operator == '+') {
+          data['operator'] = 'addition';
+        } else if (operator == '-') {
+          data['operator'] = 'subtraction';
+        } else if (operator == '/') {
+          data['operator'] = 'division';
+        } else {
+          data['operator'] = 'multiplication';
+        }
+
+        data['operands'] = [processed_array[0], processed_array[2]];
+
+        let j = 2;
+
+        for (j = 3; j < processed_array.length - 1; j++) {
+          let temp = JSON.parse(JSON.stringify(data));
+
+          if (processed_array[j] == '+') {
+            data['operands'][0] = temp;
+            data['operands'][1] = processed_array[j + 1];
+            data['name'] =
+              data['operands'][0].name + '+' + data['operands'][1].name;
+            data['type'] = 'computed';
+            data['operator'] = 'addition';
+          } else if (processed_array[j] == '-') {
+            data['operands'][0] = temp;
+            data['operands'][1] = processed_array[j + 1];
+            data['name'] =
+              data['operands'][0].name + '-' + data['operands'][1].name;
+            data['type'] = 'computed';
+            data['operator'] = 'subtraction';
+          } else if (processed_array[j] == '*') {
+            data['operands'][0] = temp;
+            data['operands'][1] = processed_array[j + 1];
+            data['name'] =
+              data['operands'][0].name + '*' + data['operands'][1].name;
+            data['type'] = 'computed';
+            data['operator'] = 'multiplication';
+          } else if (processed_array[j] == '/') {
+            data['operands'][0] = temp;
+            data['operands'][1] = processed_array[j + 1];
+            data['name'] =
+              data['operands'][0].name + '/' + data['operands'][1].name;
+            data['type'] = 'computed';
+            data['operator'] = 'division';
+          }
+        }
+      }
+      console.log("Mixed JSON - ", data);
+
+      // this.constructGoJSFormattedData0(data)
+      
+      return data 
+    }
+  };
+
+  generate_tag_plus_aggregator_operand = (tagName, aggr) => {
+    let op = {
+      name: tagName + '{' + aggr + '}',
+      type: 'aggregate',
+      aggregator: aggr,
+      operands: [
+        {
+          name: tagName + ' + 0',
+          type: 'computed',
+          operator: 'addition',
+          operands: [
+            {
+              name: tagName,
+              type: 'variable',
+              column: tagName,
+            },
+            {
+              name: '0',
+              type: 'constant',
+            },
+          ],
+        },
+      ],
+    };
+
+    return op;
+  };
+
+  generate_json_by_removing_divisions = (json_arr) => { 
+    let temp_arr = [];
+    let is_div_present = false;
+    for (let i = 0; i < json_arr.length; i++) {
+      if (json_arr[i].name == '/') {
+        is_div_present = true;
+        let op1 = temp_arr.pop();
+        let op2 = json_arr[i + 1];
+
+        let test = {
+          name: 'Result + ' + i,
+          type: 'computed',
+          operator: 'division',
+          operands: [op1, op2],
+        };
+
+        temp_arr.push(test);
+        i += 2;
+        while (i < json_arr.length) {
+          temp_arr.push(json_arr[i]);
+          i++;
+        }
+
+        break;
+      } else {
+        temp_arr.push(json_arr[i]);
+      }
+    }
+
+    if (!is_div_present) {
+      // console.log('Returning : ', temp_arr);
+      return temp_arr;
+    }
+
+    return this.generate_json_by_removing_divisions(temp_arr);
+  };
+
+  generate_json_by_removing_multipliers = (json_arr) => { 
+    let temp_arr = [];
+    let is_div_present = false;
+    for (let i = 0; i < json_arr.length; i++) {
+      if (json_arr[i].name == '*') {
+        is_div_present = true;
+        let op1 = temp_arr.pop();
+        let op2 = json_arr[i + 1];
+
+        let test = {
+          name: 'Result + ' + i,
+          type: 'computed',
+          operator: 'multiplication',
+          operands: [op1, op2],
+        };
+
+        temp_arr.push(test);
+        i += 2;
+        while (i < json_arr.length) {
+          temp_arr.push(json_arr[i]);
+          i++;
+        }
+
+        break;
+      } else {
+        temp_arr.push(json_arr[i]);
+      }
+    }
+
+    if (!is_div_present) {
+      // console.log('Returning : ', temp_arr);
+      return temp_arr;
+    }
+
+    return this.generate_json_by_removing_multipliers(temp_arr);
+  };
+
+  getJsonForEachSubFormulaBetweenBrackets = (array) => {
+    let newArr = []
+    if(array.length == 0){
+      return [] 
+    }
+    let test = true
+    for(let i=0;i<array.length;){
+      if(array[i].name != ")"){
+        newArr.push(array[i])
+        i++;
+      }
+      else{
+        let reverse_array = []
+        while(newArr.length && newArr[newArr.length-1].name !='('){
+          reverse_array.push(newArr.pop())
+          test = false
+        }
+
+        if(newArr.length && newArr[newArr.length-1].name =='('){
+          newArr.pop()
+        }
+
+        reverse_array.reverse()
+
+        let json = this.getAbsoluteFormulaJson(reverse_array)
+        console.log("JSON - ",json)
+        newArr.push(json)
+
+        i++;
+        while(i<array.length){
+          newArr.push(array[i])
+          i++;
+        }
+      }
+    }
+
+    if(test == false)
+      return this.getJsonForEachSubFormulaBetweenBrackets(newArr)
+    
+      if(test) {
+        const final_data = this.getAbsoluteFormulaJson(newArr)
+        this.constructGoJSFormattedData0(final_data)
+      }
+  }
+
+  aggregate_final_json = undefined 
+  getJsonForEachSubFormulaBetweenBracketsAggregateTimeBasedFormula = (array) => {
+    let newArr = []
+    if(array.length == 0){
+      return [] 
+    }
+    let test = true
+    for(let i=0;i<array.length;){
+      if(array[i].name != ")"){
+        newArr.push(array[i])
+        i++;
+      }
+      else{
+        let reverse_array = []
+        while(newArr.length && newArr[newArr.length-1].name !='('){
+          reverse_array.push(newArr.pop())
+          test = false
+        }
+
+        if(newArr.length && newArr[newArr.length-1].name =='('){
+          newArr.pop()
+        }
+
+        reverse_array.reverse()
+
+        console.log("Reverse arr - ", reverse_array);
+        
+
+        let json = this.getAggregateFormulaJson(reverse_array)
+        this.aggregate_final_json = json
+        newArr.push(json)
+        console.log("Newarray is - ",newArr);
+        
+
+        i++;
+        while(i<array.length){
+          newArr.push(array[i])
+          i++;
+        }
+      }
+    }
+
+    if(test == false ){
+      console.log("Recursion newArr - ",newArr );
+      
+      return this.getJsonForEachSubFormulaBetweenBracketsAggregateTimeBasedFormula(newArr)
+    }
+    
+      if(test) {
+        
+      console.log("final view newArr - ",newArr );
+        const final_data = this.getAggregateFormulaJson(newArr)
+        console.log("GetAggregateReturned - ",final_data);
+        
+        if(final_data){
+          this.aggregate_final_json = final_data
+        }
+
+        
+        this.constructGoJSFormattedData0(this.aggregate_final_json)
+      }
+  }
+
+  validateAggregateTimeBasedFormulaWithBrackets = (inp_formula_array) => {
+    let is_formula_valid = true;
+    let formula_array = [],
+      formula = '';
+    let open = 0
+    let close = 0
+
+    let i = 0;
+    while (i < this.dropped_tags.length) {
+      if (i == 0) {
+        if (
+          this.dropped_tags[i]['type'] == 'aggregator' ||
+          this.dropped_tags[i]['type'] == 'operator'
+        ) {
+          is_formula_valid = false;
+          break;
+        } else {
+          formula_array.push(this.dropped_tags[i]);
+
+          if(inp_formula_array[i]['name'] == '('){
+            open += 1
+          }
+        }
+      } else {
+        let last_obj = formula_array[formula_array.length - 1];
+        let next_type = '';
+        if (last_obj['type'] == 'aggregator') {
+          next_type = 'operator';
+        } else if (last_obj['type'] == 'operator') {
+          next_type = 'tag||constant||bracket';
+        } else if (last_obj['type'] == 'constant') {
+          next_type = 'operator';
+        }
+        else if (last_obj['type'] == 'bracket' && last_obj['name'] == '(') {
+          next_type = 'tag||constant||bracket';
+        }
+        else if (last_obj['type'] == 'bracket' && last_obj['name'] == ')') {
+          next_type = 'operator';
+        }
+        else {
+          next_type = 'aggregator';
+        }
+
+        if (
+          (next_type == inp_formula_array[i]['type'] && next_type == 'constant') ||
+          (next_type == inp_formula_array[i]['type'] && next_type == 'operator') ||
+          (next_type == inp_formula_array[i]['type'] && next_type == 'aggregator')
+        ) {
+          formula_array.push(this.dropped_tags[i]);
+        } else if (
+          (next_type != inp_formula_array[i]['type'] && next_type == 'tag||constant||bracket' && inp_formula_array[i]['type'] != 'operator' && inp_formula_array[i]['type'] != 'aggregator') 
+          ||
+
+          (next_type != inp_formula_array[i]['type'] && next_type == 'operator' && inp_formula_array[i]['name'] == ')') 
+        ) {
+          formula_array.push(this.dropped_tags[i]);
+
+          if(inp_formula_array[i]['name'] == '('){
+            open += 1
+          }
+          else if(inp_formula_array[i]['name'] == ')'){
+            if(close>=open){
+              is_formula_valid = false
+              break
+            }
+            open -= 1
+          }
+
+        } else {
+          is_formula_valid = false;
+          break;
+        }
+      }
+      i++;
+    }
+
+
+    if (
+      is_formula_valid &&
+      formula_array.length != 0 &&
+      (formula_array[formula_array.length - 1]['type'] == 'constant' || formula_array[formula_array.length - 1]['type'] == 'aggregator' || formula_array[formula_array.length - 1]['name'] == ')' ) 
+    ) {
+      if(open == close){
+        return formula_array
+      }
+      else{
+        window.alert("InValid Formula - "+ formula)
+        return false;
+      }
+    } else { 
+      window.alert("InValid Formula - "+ formula)
+      return false;
+    }
+
+
+
+  }
 
 
   validateAbsoluteFormulaWithBrackets = (inp_formula_array) => {
@@ -979,7 +2164,7 @@ export class FinalNewUiComponent implements OnInit {
     let close = 0
 
 
-    console.log("Validating - ", inp_formula_array);
+    console.log("Validating absolute - ", inp_formula_array);
     
 
     for (let i = 0; i < inp_formula_array.length; i++) {
@@ -1087,10 +2272,9 @@ export class FinalNewUiComponent implements OnInit {
       this.frequency
     );
 
-    let temp_array = this.validateAbsoluteFormulaWithBrackets(this.dropped_tags)
+    if(this.frequency != 1) return false
 
-    console.log("Temp Array - ", temp_array);
-    
+    let temp_array = this.validateAbsoluteFormulaWithBrackets(this.dropped_tags)
 
     if(temp_array){
       let json = this.getJsonForEachSubFormulaBetweenBrackets(temp_array)
@@ -1175,440 +2359,7 @@ export class FinalNewUiComponent implements OnInit {
     // }
   };
 
-  onSaveTag = () => {
-    if (this.configurating_tag == 'NA') {
-      return window.alert('Please Select Tag First');
-    } else {
-      let isRequestHandled = this.handleAbsoluteDataLoggingFormulas();
-      if (isRequestHandled) return;
-
-      let i = 0;
-      let is_formula_valid = true;
-      let formula_array = [];
-      let formula = '';
-
-      // construct valid formula else say invalid formula
-      while (i < this.dropped_tags.length) {
-        if (i == 0) {
-          if (
-            this.dropped_tags[i]['type'] == 'aggregator' ||
-            this.dropped_tags[i]['type'] == 'operator'
-          ) {
-            is_formula_valid = false;
-            break;
-          } else {
-            formula_array.push(this.dropped_tags[i]);
-          }
-        } else {
-          let last_obj = formula_array[formula_array.length - 1];
-          let next_type = '';
-          if (last_obj['type'] == 'aggregator') {
-            next_type = 'operator';
-          } else if (last_obj['type'] == 'operator') {
-            next_type = 'tag||constant';
-          } else if (last_obj['type'] == 'constant') {
-            next_type = 'operator';
-          } else {
-            next_type = 'aggregator';
-          }
-
-          if (
-            (next_type == this.dropped_tags[i]['type'] &&
-              next_type == 'aggregator') ||
-            (next_type == this.dropped_tags[i]['type'] &&
-              next_type == 'operator')
-          ) {
-            formula_array.push(this.dropped_tags[i]);
-          } else if (
-            next_type != this.dropped_tags[i]['type'] &&
-            next_type == 'tag||constant' &&
-            this.dropped_tags[i]['type'] != 'aggregator' &&
-            this.dropped_tags[i]['type'] != 'operator'
-          ) {
-            formula_array.push(this.dropped_tags[i]);
-          } else {
-            is_formula_valid = false;
-            break;
-          }
-        }
-        i++;
-      }
-
-      if (
-        formula_array.length == 0 ||
-        (formula_array[formula_array.length - 1]['type'] != 'aggregator' &&
-          formula_array[formula_array.length - 1]['type'] != 'constant')
-      ) {
-        is_formula_valid = false;
-      }
-
-      // if invalid formula check with first as a default aggregator
-      if (formula_array.length != 0 && !is_formula_valid) {
-        is_formula_valid = true;
-        formula_array = [];
-        let i = 0;
-        while (i < this.dropped_tags.length) {
-          if (i == 0) {
-            if (
-              this.dropped_tags[i]['type'] == 'aggregator' ||
-              this.dropped_tags[i]['type'] == 'operator'
-            ) {
-              is_formula_valid = false;
-              break;
-            } else {
-              formula_array.push(this.dropped_tags[i]);
-            }
-          } else {
-            let last_obj = formula_array[formula_array.length - 1];
-            let next_type = '';
-            if (last_obj['type'] == 'aggregator') {
-              next_type = 'operator';
-            } else if (last_obj['type'] == 'operator') {
-              next_type = 'tag||constant';
-            } else if (last_obj['type'] == 'constant') {
-              next_type = 'operator';
-            } else {
-              next_type = 'aggregator';
-            }
-
-            if (
-              (next_type == this.dropped_tags[i]['type'] &&
-                next_type == 'aggregator') ||
-              (next_type == this.dropped_tags[i]['type'] &&
-                next_type == 'operator')
-            ) {
-              formula_array.push(this.dropped_tags[i]);
-            } else if (
-              next_type != this.dropped_tags[i]['type'] &&
-              next_type == 'tag||constant' &&
-              this.dropped_tags[i]['type'] != 'aggregator' &&
-              this.dropped_tags[i]['type'] != 'operator'
-            ) {
-              formula_array.push(this.dropped_tags[i]);
-            } else {
-              if (
-                next_type == 'aggregator' &&
-                this.dropped_tags[i]['type'] == 'operator'
-              ) {
-                formula_array.push({
-                  type: 'aggregator',
-                  name: 'first',
-                });
-
-                formula_array.push(this.dropped_tags[i]);
-              } else {
-                console.log('Hi 3 ', i);
-                is_formula_valid = false;
-                break;
-              }
-            }
-          }
-          i++;
-        }
-      }
-
-      if (formula_array.length != 0 && is_formula_valid) {
-        if (
-          formula_array[formula_array.length - 1]['type'] != 'aggregator' &&
-          formula_array[formula_array.length - 1]['type'] != 'constant'
-        ) {
-          formula_array.push({
-            type: 'aggregator',
-            name: 'first',
-          });
-        }
-      }
-
-      // display formula logic and save new tag and update existing
-      if (is_formula_valid) {
-        for (let obj of formula_array) {
-          if (obj['type'] == 'aggregator') {
-            formula += `{${obj['name']}}`;
-          } else if (obj['type'] == 'operator') {
-            formula += ` ${obj['name']} `;
-          } else {
-            formula += obj['name'];
-          }
-        }
-        window.alert('Formula is : ' + formula);
-        this.formula_representation = `${this.configurating_tag} = ${formula}`;
-        let exists = false;
-        for (let tag of this.tags.saved_tags) {
-          if (tag['name'] == this.configurating_tag) {
-            tag['formula'] = formula;
-            tag['formula_array'] = formula_array;
-            (exists = true),
-              (tag['distinct_columns'] = this.distinct_tags_selected);
-            tag['is_it_final_tag'] = this.is_it_final_tag;
-          }
-        }
-        if (!exists) {
-          this.tags.saved_tags.push({
-            type: 'derived',
-            name: `${this.configurating_tag}`,
-            formula: formula,
-            formula_array: formula_array,
-            distinct_columns: this.distinct_tags_selected,
-            is_it_final_tag: this.is_it_final_tag,
-          });
-        }
-
-        this.saved_tags_copy = JSON.parse(JSON.stringify(this.tags.saved_tags));
-
-        this.update_tag(this.configurating_tag);
-
-        this.onReset();
-      } else {
-        window.alert('Invalid Formula');
-      }
-
-      // construct backend json for valid formula
-      if (is_formula_valid) {
-        console.log('Formula Info : ', this.formula_info);
-
-        let arr = formula.split(' ');
-
-        let op1 = ['+', '-'];
-        let op2 = ['*', '/'];
-        let is_only_one_type = undefined;
-        let parent = {
-          name: this.formula_name,
-          type: 'continuous',
-          interval_type: 'time',
-          time_column: this.time_col,
-          formula_name: this.configurating_tag,
-          interval_start: this.formula_info['start_from'] || 1,
-          interval_value: this.formula_info['interval'] || 600,
-          result_collection: this.formula_info['result_collection'],
-          datasource_id: this.datasource_id || -1,
-          operands: [],
-          collection_name: this.collection_name,
-          distinct_columns: this.distinct_tags_selected,
-        };
-
-        for (let i of arr) {
-          if (op1.includes(i)) {
-            if (!is_only_one_type || is_only_one_type == op1) {
-              is_only_one_type = op1;
-            } else {
-              is_only_one_type = undefined;
-              break;
-            }
-          }
-          if (op2.includes(i)) {
-            if (!is_only_one_type || is_only_one_type == op2) {
-              is_only_one_type = op2;
-            } else {
-              is_only_one_type = undefined;
-              break;
-            }
-          }
-        }
-
-        let data = {};
-
-        if (arr.length == 1) {
-          is_only_one_type = true;
-        }
-        console.log('Only one type : ', is_only_one_type);
-        if (is_only_one_type) {
-          let json_arr = [];
-
-          for (let i of arr) {
-            if (op1.includes(i) || op2.includes(i)) {
-              json_arr.push(i);
-              continue;
-            }
-            let tag = i.split('{')[0];
-            let agg = i.split('{')[1].split('}')[0];
-
-            json_arr.push(this.generate_tag_plus_aggregator_operand(tag, agg));
-          }
-
-          if (json_arr.length > 2) {
-            data['name'] = '0+1';
-            data['type'] = 'computed';
-            if (json_arr[1] == '+') {
-              data['operator'] = 'addition';
-            } else if (json_arr[1] == '-') {
-              data['operator'] = 'subtraction';
-            } else if (json_arr[1] == '/') {
-              data['operator'] = 'division';
-            } else {
-              data['operator'] = 'multiplication';
-            }
-
-            data['operands'] = [json_arr[0], json_arr[2]];
-
-            let j = 2;
-
-            for (j = 2; j < json_arr.length - 1; j++) {
-              let temp = JSON.parse(JSON.stringify(data));
-
-              if (json_arr[j] == '+') {
-                data['operands'][0] = temp;
-                data['operands'][1] = json_arr[j + 1];
-                data['name'] = 'Result - ' + j;
-                data['type'] = 'computed';
-                data['operator'] = 'addition';
-              } else if (json_arr[j] == '-') {
-                data['operands'][0] = temp;
-                data['operands'][1] = json_arr[j + 1];
-                data['name'] = 'Result - ' + j;
-                data['type'] = 'computed';
-                data['operator'] = 'subtraction';
-              } else if (json_arr[j] == '*') {
-                data['operands'][0] = temp;
-                data['operands'][1] = json_arr[j + 1];
-                data['name'] = 'Result - ' + j;
-                data['type'] = 'computed';
-                data['operator'] = 'multiplication';
-              } else if (json_arr[j] == '/') {
-                data['operands'][0] = temp;
-                data['operands'][1] = json_arr[j + 1];
-                data['name'] = 'Result - ' + j;
-                data['type'] = 'computed';
-                data['operator'] = 'division';
-              }
-            }
-          } else if (json_arr.length == 2) {
-            data['name'] = '0+1';
-            data['type'] = 'computed';
-            if (json_arr[1] == '+') {
-              data['operator'] = 'addition';
-            } else if (json_arr[1] == '-') {
-              data['operator'] = 'subtraction';
-            } else if (json_arr[1] == '/') {
-              data['operator'] = 'division';
-            } else {
-              data['operator'] = 'multiplication';
-            }
-
-            data['operands'] = [json_arr[0], json_arr[2]];
-          } else if (json_arr.length == 1) {
-            data['name'] = '0+1';
-            data['type'] = 'computed';
-            data['operator'] = 'addition';
-            data['operands'] = [
-              json_arr[0],
-              {
-                name: '0',
-                type: 'constant',
-              },
-            ];
-          }
-
-          parent['operands'].push(data);
-          console.log('Final Data Object : ', parent);
-        } else {
-          let json_arr = [];
-          let temp_arr = [];
-          console.log('Test 01 ', arr);
-          for (let i of arr) {
-            if (op1.includes(i) || op2.includes(i)) {
-              json_arr.push(i);
-              continue;
-            }
-            // else if(typeof(Number(i)) == Number){
-
-            // }
-            let tag = i.split('{')[0];
-            let agg = i.split('{')[1].split('}')[0];
-
-            json_arr.push(this.generate_tag_plus_aggregator_operand(tag, agg));
-          }
-
-          if (json_arr.length > 2) {
-            console.log('Test 0 ', json_arr);
-
-            json_arr = this.generate_json_by_removing_divisions(json_arr);
-            json_arr = this.generate_json_by_removing_multipliers(json_arr);
-
-            console.log('Final Json Array at save : ');
-            console.log(json_arr);
-
-            data['name'] = '0+1';
-            data['type'] = 'computed';
-            if (json_arr[1] == '+') {
-              data['operator'] = 'addition';
-            } else if (json_arr[1] == '-') {
-              data['operator'] = 'subtraction';
-            } else if (json_arr[1] == '/') {
-              data['operator'] = 'division';
-            } else {
-              data['operator'] = 'multiplication';
-            }
-
-            data['operands'] = [json_arr[0], json_arr[2]];
-
-            let j = 2;
-
-            for (j = 2; j < json_arr.length - 1; j++) {
-              let temp = JSON.parse(JSON.stringify(data));
-
-              if (json_arr[j] == '+') {
-                data['operands'][0] = temp;
-                data['operands'][1] = json_arr[j + 1];
-                data['name'] = 'Result - ' + j;
-                data['type'] = 'computed';
-                data['operator'] = 'addition';
-              } else if (json_arr[j] == '-') {
-                data['operands'][0] = temp;
-                data['operands'][1] = json_arr[j + 1];
-                data['name'] = 'Result - ' + j;
-                data['type'] = 'computed';
-                data['operator'] = 'subtraction';
-              } else if (json_arr[j] == '*') {
-                data['operands'][0] = temp;
-                data['operands'][1] = json_arr[j + 1];
-                data['name'] = 'Result - ' + j;
-                data['type'] = 'computed';
-                data['operator'] = 'multiplication';
-              } else if (json_arr[j] == '/') {
-                data['operands'][0] = temp;
-                data['operands'][1] = json_arr[j + 1];
-                data['name'] = 'Result - ' + j;
-                data['type'] = 'computed';
-                data['operator'] = 'division';
-              }
-            }
-
-            parent['operands'].push(data);
-            console.log('Final Data Object - 2 : ', parent);
-          } else if (json_arr.length == 2) {
-            data['name'] = '0+1';
-            data['type'] = 'computed';
-            if (json_arr[1] == '+') {
-              data['operator'] = 'addition';
-            } else if (json_arr[1] == '-') {
-              data['operator'] = 'subtraction';
-            } else if (json_arr[1] == '/') {
-              data['operator'] = 'division';
-            } else {
-              data['operator'] = 'multiplication';
-            }
-
-            data['operands'] = [json_arr[0], json_arr[2]];
-          } else if (json_arr.length == 1) {
-            data['name'] = '0+1';
-            data['type'] = 'computed';
-            data['operator'] = 'addition';
-            data['operands'] = [
-              json_arr[0],
-              {
-                name: '0',
-                type: 'constant',
-              },
-            ];
-          }
-        }
-
-        this.backend_data.push(parent);
-
-        console.log('Backend Array : ', this.backend_data);
-      }
-    }
-  };
+  
 
   ngOnInit(): void {
     this.route.queryParams.subscribe((params) => {
@@ -1732,7 +2483,7 @@ export class FinalNewUiComponent implements OnInit {
         event.currentIndex
       );
 
-      this.getJsonForEachSubFormulaBetweenBrackets(this.dropped_tags)
+      // this.getJsonForEachSubFormulaBetweenBrackets(this.dropped_tags)
     }
 
     this.tags.datasource_tags = JSON.parse(
@@ -1742,155 +2493,6 @@ export class FinalNewUiComponent implements OnInit {
     this.operators = JSON.parse(JSON.stringify(this.operators_copy));
 
     this.tags.saved_tags = JSON.parse(JSON.stringify(this.saved_tags_copy));
-  }
-
-  generate_tag_plus_aggregator_operand = (tagName, aggr) => {
-    let op = {
-      name: tagName + '{' + aggr + '}',
-      type: 'aggregate',
-      aggregator: aggr,
-      operands: [
-        {
-          name: tagName + ' + 0',
-          type: 'computed',
-          operator: 'addition',
-          operands: [
-            {
-              name: tagName,
-              type: 'variable',
-              column: tagName,
-            },
-            {
-              name: '0',
-              type: 'constant',
-            },
-          ],
-        },
-      ],
-    };
-
-    return op;
-  };
-
-  generate_json_by_removing_divisions = (json_arr) => {
-    console.log('Json Array : ', json_arr);
-    let temp_arr = [];
-    let is_div_present = false;
-    for (let i = 0; i < json_arr.length; i++) {
-      if (json_arr[i].name == '/') {
-        is_div_present = true;
-        let op1 = temp_arr.pop();
-        let op2 = json_arr[i + 1];
-
-        let test = {
-          name: 'Result + ' + i,
-          type: 'computed',
-          operator: 'division',
-          operands: [op1, op2],
-        };
-
-        temp_arr.push(test);
-        i += 2;
-        while (i < json_arr.length) {
-          temp_arr.push(json_arr[i]);
-          i++;
-        }
-
-        break;
-      } else {
-        temp_arr.push(json_arr[i]);
-      }
-    }
-
-    if (!is_div_present) {
-      console.log('Returning : ', temp_arr);
-      return temp_arr;
-    }
-
-    return this.generate_json_by_removing_divisions(temp_arr);
-  };
-
-  generate_json_by_removing_multipliers = (json_arr) => {
-    console.log('Json Array : ', json_arr);
-    let temp_arr = [];
-    let is_div_present = false;
-    for (let i = 0; i < json_arr.length; i++) {
-      if (json_arr[i].name == '*') {
-        is_div_present = true;
-        let op1 = temp_arr.pop();
-        let op2 = json_arr[i + 1];
-
-        let test = {
-          name: 'Result + ' + i,
-          type: 'computed',
-          operator: 'multiplication',
-          operands: [op1, op2],
-        };
-
-        temp_arr.push(test);
-        i += 2;
-        while (i < json_arr.length) {
-          temp_arr.push(json_arr[i]);
-          i++;
-        }
-
-        break;
-      } else {
-        temp_arr.push(json_arr[i]);
-      }
-    }
-
-    if (!is_div_present) {
-      console.log('Returning : ', temp_arr);
-      return temp_arr;
-    }
-
-    return this.generate_json_by_removing_multipliers(temp_arr);
-  };
-
-  getJsonForEachSubFormulaBetweenBrackets = (array) => {
-    let newArr = []
-    if(array.length == 0){
-      return [] 
-    }
-    let test = true
-    for(let i=0;i<array.length;){
-      if(array[i].name != ")"){
-        newArr.push(array[i])
-        i++;
-      }
-      else{
-        let reverse_array = []
-        while(newArr.length && newArr[newArr.length-1].name !='('){
-          reverse_array.push(newArr.pop())
-          test = false
-        }
-
-        if(newArr.length && newArr[newArr.length-1].name =='('){
-          newArr.pop()
-        }
-
-        reverse_array.reverse()
-
-        let json = this.getAbsoluteFormulaJson(reverse_array)
-        console.log("JSON - ",json)
-        newArr.push(json)
-
-        i++;
-        while(i<array.length){
-          newArr.push(array[i])
-          i++;
-        }
-      }
-    }
-
-    if(test == false)
-      return this.getJsonForEachSubFormulaBetweenBrackets(newArr)
-    
-      if(test) {
-        const final_data = this.getAbsoluteFormulaJson(newArr)
-        this.constructGoJSFormattedData0(final_data)
-      }
   }
 
   onChangeConstant = (event) => {

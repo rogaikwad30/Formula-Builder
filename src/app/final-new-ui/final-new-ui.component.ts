@@ -353,6 +353,204 @@ export class FinalNewUiComponent implements OnInit {
       "connectorname" : "Advantage SCADA",
       "frequency" : 1800
   },
+  {
+    "_id" : "633403d56108171beaa42720",
+    "conf" : {
+        "collection" : "Archive-MELSEC_OEE_DATA",
+        "path" : "localhost",
+        "dbname" : "SAR",
+        "table" : "MELSEC_OEE_DATA",
+        "db_table" : "MELSEC_OEE_DATA",
+        "columninfo" : [ 
+            {
+                "name" : "RUNTIME",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+              "name" : "Ideal Cycle",
+              "type" : "number",
+              "property" : "none",
+              "format" : "none",
+              "isMatchColumn" : false,
+              "isUniqueTimeColumn" : false,
+              "isenddate" : false,
+              "isstartdate" : false
+          }, 
+            {
+                "name" : "DOWNTIME",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TOTAL_COUNT",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "ACTUAL_COUNT",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "REJECTED_COUNT",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "Date_Time",
+                "type" : "time",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "Date_Time_EP",
+                "type" : "text",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "__v",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }
+        ]
+    },
+    "updated_at" : "2022-09-28T13:50:37.304Z",
+    "datatype" : "db",
+    "requesttype" : "data",
+    "id" : "data-source-1664353237",
+    "type" : "Archive",
+    "clientip" : "localhost",
+    "frequency" : 60,
+    "__v" : 0
+},
+{ 
+  "conf" : {
+      "collection" : "Archive-MELSEC-OEE",
+      "path" : "localhost",
+      "dbname" : "SAR",
+      "table" : "MELSEC",
+      "db_table" : "MELSEC",
+      "columninfo" : [ 
+          {
+              "name" : "time_EP",
+              "type" : "number",
+              "property" : "none",
+              "format" : "none",
+              "isMatchColumn" : false,
+              "isUniqueTimeColumn" : false,
+              "isenddate" : false,
+              "isstartdate" : false
+          }, 
+          {
+              "name" : "Total-Product-Count",
+              "type" : "number",
+              "property" : "none",
+              "format" : "none",
+              "isMatchColumn" : false,
+              "isUniqueTimeColumn" : false,
+              "isenddate" : false,
+              "isstartdate" : false
+          }, 
+          {
+              "name" : "time",
+              "type" : "time",
+              "property" : "none",
+              "format" : "none",
+              "isMatchColumn" : false,
+              "isUniqueTimeColumn" : false,
+              "isenddate" : false,
+              "isstartdate" : false
+          }, 
+          {
+              "name" : "Quality",
+              "type" : "number",
+              "property" : "none",
+              "format" : "none",
+              "isMatchColumn" : false,
+              "isUniqueTimeColumn" : false,
+              "isenddate" : false,
+              "isstartdate" : false
+          }, 
+          {
+              "name" : "availibilty",
+              "type" : "number",
+              "property" : "none",
+              "format" : "none",
+              "isMatchColumn" : false,
+              "isUniqueTimeColumn" : false,
+              "isenddate" : false,
+              "isstartdate" : false
+          }, 
+          {
+              "name" : "availibility",
+              "type" : "number",
+              "property" : "none",
+              "format" : "none",
+              "isMatchColumn" : false,
+              "isUniqueTimeColumn" : false,
+              "isenddate" : false,
+              "isstartdate" : false
+          }, 
+          {
+              "name" : "Performance",
+              "type" : "number",
+              "property" : "none",
+              "format" : "none",
+              "isMatchColumn" : false,
+              "isUniqueTimeColumn" : false,
+              "isenddate" : false,
+              "isstartdate" : false
+          }
+      ]
+  },
+  "datatype" : "db",
+  "requesttype" : "data",
+  "id" : "data-source-1664362712",
+  "type" : "Archive",
+  "clientip" : "localhost",
+  "frequency" : 60,
+  "__v" : 0
+},
     {
       conf: {
         collection: 'Archive-Data',
@@ -800,6 +998,8 @@ export class FinalNewUiComponent implements OnInit {
   
     // console.log("Final Inp Data - ", final_tag ,final_arr);
     
+    if(!final_tag) return final_arr
+
     if(parentKey==-1){
       parentKey = 1
       final_arr.push({ 
@@ -1022,7 +1222,9 @@ export class FinalNewUiComponent implements OnInit {
       let isRequestHandled = this.handleAbsoluteDataLoggingFormulas();
       console.log("Abs req res - ",isRequestHandled );
       
-      if (isRequestHandled) return;
+      if (isRequestHandled){
+        return 
+      };
 
       let valid_aggregate_time_based_formula_array = this.validateAggregateTimeBasedFormulaWithBrackets(this.dropped_tags)
       
@@ -1038,7 +1240,7 @@ export class FinalNewUiComponent implements OnInit {
         let formula_array = valid_aggregate_time_based_formula_array
 
         if(this.aggregate_final_json){
-          for (let obj of formula) {
+          for (let obj of formula_array) {
             if (obj['type'] == 'aggregator') {
               formula += `{${obj['name']}}`;
             } else if (obj['type'] == 'operator') {
@@ -1728,7 +1930,7 @@ export class FinalNewUiComponent implements OnInit {
         }
         else {
           // it's a tag
-          if (array[i].type != "aggregator" && array[i].type != "aggregate"){
+          if (array[i].type != "aggregator" && array[i].type != "aggregate" && i+1<array.length){
             let tag_aggr_json = this.generate_tag_plus_aggregator_operand(array[i].name,array[i+1].name)
             i+=1;
 
@@ -2347,6 +2549,72 @@ export class FinalNewUiComponent implements OnInit {
 
     if(temp_array){
       let json = this.getJsonForEachSubFormulaBetweenBrackets(temp_array)
+
+
+      let formula = ""
+      let formula_array = temp_array
+      if(this.final_absolute_json){
+        for (let obj of formula_array) {
+          if (obj['type'] == 'aggregator') {
+            formula += `{${obj['name']}}`;
+          } else if (obj['type'] == 'operator') {
+            formula += ` ${obj['name']} `;
+          } else {
+            formula += obj['name'];
+          }
+        }
+        window.alert('Formula is : ' + formula);
+        this.formula_representation = `${this.configurating_tag} = ${formula}`;
+        let exists = false;
+        for (let tag of this.tags.saved_tags) {
+          if (tag['name'] == this.configurating_tag) {
+            tag['formula'] = formula;
+            tag['data'] = this.aggregate_final_json
+            tag['formula_array'] = formula_array;
+            (exists = true),
+              (tag['distinct_columns'] = this.distinct_tags_selected);
+            tag['is_it_final_tag'] = this.is_it_final_tag;
+          }
+        }
+        if (!exists) {
+          this.tags.saved_tags.push({
+            type: 'derived',
+            name: `${this.configurating_tag}`,
+            formula: formula,
+            formula_array: formula_array,
+            distinct_columns: this.distinct_tags_selected,
+            is_it_final_tag: this.is_it_final_tag,
+            data: this.final_absolute_json
+          });
+        }
+
+        this.saved_tags_copy = JSON.parse(JSON.stringify(this.tags.saved_tags));
+
+        this.update_tag(this.configurating_tag);
+
+        this.onReset();
+
+        let parent = {
+          name: this.formula_name,
+          type: 'continuous',
+          interval_type: 'absolute',
+          time_column: this.time_col,
+          formula_name: this.configurating_tag,
+          interval_start: this.formula_info['start_from'] || 1,
+          interval_value: this.formula_info['interval'] || 600,
+          result_collection: this.formula_info['result_collection'],
+          datasource_id: this.datasource_id || -1,
+          operands: [this.final_absolute_json],
+          aggregation: "sum",
+          collection_name: this.collection_name,
+          distinct_columns: this.distinct_tags_selected,
+        };
+
+        this.backend_data.push(parent)
+
+      }  
+
+
     }
     return 1
 

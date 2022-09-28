@@ -1,6 +1,6 @@
 <div class="main">
     <section class="content">
-        <mat-grid-list cols="1" rowHeight="50px" class="fname">
+        <mat-grid-list cols="1" rowHeight="90px" class="fname">
             <mat-grid-tile>
                 <h5 style="font-size: 16px;">
                     Formula Name - 
@@ -50,7 +50,7 @@
 
         <hr>
 
-        <mat-grid-list cols="4" rowHeight="220px" class="row3" style="
+        <mat-grid-list cols="4" rowHeight="550px" class="row3" style="
         border-bottom : 1px solid rgb(216, 210, 210);">
             <mat-grid-tile colspan="1">
                 <div class="ds">
@@ -64,11 +64,11 @@
             </mat-grid-tile>
 
             <mat-grid-tile colspan="3" class="formula">
-                <h6 style="font-size: 16px;">
+                <!-- <h6 style="font-size: 16px;" style="display: block; width: 300px; height: 100%; display: flex ; justify-content: center; align-items: center;">
                     {{formula_representation}}
-                </h6>
+                </h6> -->
 
-                <section style="height: 220px; width: 500px; position: absolute; right: 0; margin: 0px 10px;">
+                <section style="height: 690px; width: 100%; position: absolute; right: 0; margin: 0px 2px;">
                     <app-diagram [model]="model"></app-diagram>
                 </section>
 

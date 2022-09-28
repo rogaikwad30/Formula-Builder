@@ -20,7 +20,7 @@ export class DashboardNewUiComponent implements OnInit {
       if(Response['resp'] == "success"){
         console.log("Resp : ", Response)
         this.formulas_list = Response["data"]
-        this.onOpenTreeView(Response["data"][1]["_id"])
+        this.onOpenTreeView(Response["data"][0]["_id"])
       } 
       else{
         console.log("REs : ",Response); 

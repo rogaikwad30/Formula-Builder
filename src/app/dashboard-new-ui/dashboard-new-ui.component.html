@@ -1,13 +1,13 @@
 <div class="formulaBuilder">
     <section class="content">
-        <mat-grid-list cols="1" rowHeight="50px">
+        <mat-grid-list cols="1" rowHeight="100px">
             <mat-grid-tile class="headline">
                 <b class="lead">Formula Builder - Itanta Analytics</b>
             </mat-grid-tile>  
           </mat-grid-list>
 
           
-          <mat-grid-list cols="1" rowHeight="65px">
+          <mat-grid-list cols="1" rowHeight="100px">
             <mat-grid-tile class="buttons">
                 <div class="box">
                     <a href="/basic-new-ui?_id=new">
@@ -18,7 +18,7 @@
             </mat-grid-tile> 
           </mat-grid-list>
 
-          <mat-grid-list cols="1" rowHeight="35px" class="exists">
+          <mat-grid-list cols="1" rowHeight="50px" class="exists">
             <mat-grid-tile class="line">
                <p>Existing List of Formulas will be here</p>
                
@@ -27,7 +27,7 @@
 
          
           
-          <mat-grid-list cols="4" rowHeight="400px"> 
+          <mat-grid-list cols="4" rowHeight="450px"> 
             <mat-grid-tile class="existingList">
                 <section class="items">
                     <div class="item" *ngFor="let obj of formulas_list">
@@ -52,11 +52,11 @@
             </mat-grid-tile>
 
             <mat-grid-tile class="treeView" colspan="3">
-                <section class="items">
-                    <small class="text">
+                <section class="items" style="position: relative; display: flex; justify-content: center; align-items: center; overflow: hidden;">
+                    <small class="text" style="position: absolute; top: 5px; z-index: 1;">
                         Tree View of Selected formula 
                     </small>
-                    <section style="height: 90%;">
+                    <section style="height: 600px; width: 100%; position: absolute; justify-content: center; align-items: center; z-index: 1;">
                         <app-diagram [model]="model"></app-diagram>
                     </section>
                 </section>

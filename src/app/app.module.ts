@@ -3,28 +3,29 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatSelectModule } from '@angular/material/select';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgSelectModule } from '@ng-select/ng-select';
-
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
+
 import { FinalComponent } from './final/final.component';
-import { CommonModule } from '@angular/common';
 import { DiagramComponent } from './diagram/diagram.component';
-import { MatDialogModule } from '@angular/material/dialog';
 import { BasicNewUiComponent } from './basic-new-ui/basic-new-ui.component';
-
-
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatButtonModule} from '@angular/material/button';
-import {MatIconModule} from '@angular/material/icon';
 import { DashboardNewUiComponent } from './dashboard-new-ui/dashboard-new-ui.component';
 import { FinalNewUiComponent } from './final-new-ui/final-new-ui.component';
+
 
 @NgModule({
   declarations: [

@@ -100,6 +100,220 @@ export class FinalNewUiComponent implements OnInit {
       frequency: 60,
       __v: 0,
     },
+    {
+      "conf" : {
+          "collection" : "Archive-Deviation",
+          "path" : "localhost",
+          "dbname" : "SAR",
+          "table" : "Deviation",
+          "db_table" : "Deviation",
+          "columninfo" : [ 
+              {
+                  "name" : "Batch Count",
+                  "type" : "text",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "Ingredient",
+                  "type" : "text",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "Line",
+                  "type" : "text",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "key_name",
+                  "type" : "text",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "time_EP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "Deviation",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "time",
+                  "type" : "time",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "Deviation Percent",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "Set",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "Actual",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }
+          ]
+      },
+      "datatype" : "db",
+      "requesttype" : "data",
+      "id" : "data-source-1665056768",
+      "type" : "Archive",
+      "clientip" : "localhost",
+      "frequency" : 60,
+      "__v" : 0
+  },
+    {
+      "_id": {
+        "$oid": "633dbce2c94c6e40fc10aaa9"
+      },
+      "conf": {
+        "collection": "Archive-opc-Mixing_NSP_Tags",
+        "path": "localhost",
+        "dbname": "SAR",
+        "table": "opc",
+        "db_table": "opc",
+        "columninfo": [
+          {
+            "name": "Line",
+            "type": "text",
+            "property": "none",
+            "format": "none",
+            "isMatchColumn": false,
+            "isUniqueTimeColumn": false,
+            "isenddate": false,
+            "isstartdate": false
+          },
+          {
+            "name": "Ingredient",
+            "type": "text",
+            "property": "none",
+            "format": "none",
+            "isMatchColumn": false,
+            "isUniqueTimeColumn": false,
+            "isenddate": false,
+            "isstartdate": false
+          },
+          {
+            "name": "Batch Count",
+            "type": "number",
+            "property": "none",
+            "format": "none",
+            "isMatchColumn": false,
+            "isUniqueTimeColumn": false,
+            "isenddate": false,
+            "isstartdate": false
+          },
+          {
+            "name": "Set",
+            "type": "number",
+            "property": "none",
+            "format": "none",
+            "isMatchColumn": false,
+            "isUniqueTimeColumn": false,
+            "isenddate": false,
+            "isstartdate": false
+          },
+          {
+            "name": "Actual",
+            "type": "number",
+            "property": "none",
+            "format": "none",
+            "isMatchColumn": false,
+            "isUniqueTimeColumn": false,
+            "isenddate": false,
+            "isstartdate": false
+          },
+          {
+            "name": "Archive-opc-Mixing_NSP_Tags_TIMESTAMP",
+            "type": "time",
+            "property": "none",
+            "format": "none",
+            "isMatchColumn": false,
+            "isUniqueTimeColumn": false,
+            "isenddate": false,
+            "isstartdate": false
+          },
+          {
+            "name": "Archive-opc-Mixing_NSP_Tags_TIMESTAMP_EP",
+            "type": "number",
+            "property": "none",
+            "format": "none",
+            "isMatchColumn": false,
+            "isUniqueTimeColumn": false,
+            "isenddate": false,
+            "isstartdate": false
+          }
+        ]
+      },
+      "updated_at": {
+        "$date": {
+          "$numberLong": "1665010234183"
+        }
+      },
+      "datatype": "db",
+      "requesttype": "data",
+      "id": "data-source-1664990434",
+      "type": "Archive",
+      "clientip": "localhost",
+      "frequency": 60,
+      "__v": 0
+    },
     { 
       "conf" : {
           "collection" : "Archive-raw_location_data",
@@ -465,14 +679,14 @@ export class FinalNewUiComponent implements OnInit {
 },
 { 
   "conf" : {
-      "collection" : "Archive-MELSEC-OEE",
+      "collection" : "Archive-MELSEC_OEE",
       "path" : "localhost",
       "dbname" : "SAR",
       "table" : "MELSEC",
       "db_table" : "MELSEC",
       "columninfo" : [ 
           {
-              "name" : "time_EP",
+              "name" : "ProdCount",
               "type" : "number",
               "property" : "none",
               "format" : "none",
@@ -482,7 +696,7 @@ export class FinalNewUiComponent implements OnInit {
               "isstartdate" : false
           }, 
           {
-              "name" : "Total-Product-Count",
+              "name" : "Rejection",
               "type" : "number",
               "property" : "none",
               "format" : "none",
@@ -492,17 +706,7 @@ export class FinalNewUiComponent implements OnInit {
               "isstartdate" : false
           }, 
           {
-              "name" : "time",
-              "type" : "time",
-              "property" : "none",
-              "format" : "none",
-              "isMatchColumn" : false,
-              "isUniqueTimeColumn" : false,
-              "isenddate" : false,
-              "isstartdate" : false
-          }, 
-          {
-              "name" : "Quality",
+              "name" : "AvailTime",
               "type" : "number",
               "property" : "none",
               "format" : "none",
@@ -512,7 +716,7 @@ export class FinalNewUiComponent implements OnInit {
               "isstartdate" : false
           }, 
           {
-              "name" : "availibilty",
+              "name" : "Loss",
               "type" : "number",
               "property" : "none",
               "format" : "none",
@@ -522,17 +726,7 @@ export class FinalNewUiComponent implements OnInit {
               "isstartdate" : false
           }, 
           {
-              "name" : "availibility",
-              "type" : "number",
-              "property" : "none",
-              "format" : "none",
-              "isMatchColumn" : false,
-              "isUniqueTimeColumn" : false,
-              "isenddate" : false,
-              "isstartdate" : false
-          }, 
-          {
-              "name" : "Performance",
+              "name" : "IdealCycleTime",
               "type" : "number",
               "property" : "none",
               "format" : "none",

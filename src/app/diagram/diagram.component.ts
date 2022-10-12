@@ -42,9 +42,9 @@ export class DiagramComponent implements OnInit {
               treeStyle: go.TreeLayout.StyleLastParents,
               arrangement: go.TreeLayout.ArrangementHorizontal, 
               angle: 90,
-              layerSpacing: 50, 
+              layerSpacing: 105, 
               alternateAngle: 90,
-              alternateLayerSpacing: 50,
+              alternateLayerSpacing: 90,
               alternateAlignment: go.TreeLayout.AlignmentBus,
               alternateNodeSpacing: 50
             }),

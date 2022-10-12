@@ -119,7 +119,7 @@ def delete_all_formulas():
         for formula in formulas:
             formulas_list.append(formula)
         formulas = db.formulas_info.delete_many({})
-        return {"resp": "success", "data": formulas_list}
+        return {"resp": "success", "data": []}
     except Exception as e:
         return {"resp": "failure", "error": str(e)}
 

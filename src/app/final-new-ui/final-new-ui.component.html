@@ -57,9 +57,23 @@
                     <label for="ds">Select DataSource</label>
                     <select name="ds" id="ds" (change)="onChangeDataSource($event.target)">
                         <option *ngFor="let obj of data_sources" value="{{obj['conf']['collection']}}" >{{obj['conf']['collection']}} 
-                        
                         </option> 
                     </select>
+
+                    <div class="onChangeTags" *ngIf="frequency == -1">
+                        <p>
+                            <label for="onchange">
+                                Select OnChange Tags
+                            </label>
+                        </p>
+                        <select name="onchange" id="onchange" multiple [(ngModel)]="onchange_tags_selected">  
+                            <option  *ngFor="let obj of selectable_tags" value="{{obj}}"> 
+                                {{obj}}
+                            </option>   
+                        </select>  
+                    </div>
+
+
                 </div>
             </mat-grid-tile>
 

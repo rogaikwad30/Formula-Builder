@@ -35,6 +35,7 @@ export class FinalNewUiComponent implements OnInit {
 
   selectable_tags = [];
   distinct_tags_selected = [];
+  onchange_tags_selected = []
 
   data_sources = [
     {
@@ -1188,9 +1189,10 @@ export class FinalNewUiComponent implements OnInit {
     return is_only_one_type;
   };
 
+  $ = go.GraphObject.make
   constructGoJSFormattedData = (final_tag,final_arr=[],parentKey=-1) => {
   
-    // console.log("Final Inp Data - ", final_tag ,final_arr);
+    let lavgrad = this.$(go.Brush, "Linear", { 0: "#EF9EFA", 1: "#A570AD" });
     
     if(!final_tag) return final_arr
 
@@ -1198,7 +1200,8 @@ export class FinalNewUiComponent implements OnInit {
       parentKey = 1
       final_arr.push({ 
         'key': parentKey, 
-        'name': `${final_tag["name"]}`
+        'name': `${final_tag["name"]}`,
+        'color' : lavgrad
       })
     }
 
@@ -1210,7 +1213,8 @@ export class FinalNewUiComponent implements OnInit {
             final_arr.push({ 
               'key': final_arr.length+1, 
               'name': `${obj["name"]}`,
-              'parent': parentKey
+              'parent': parentKey,
+              'color' : lavgrad
             })
     
             final_arr = this.constructGoJSFormattedData(obj,final_arr,final_arr.length)
@@ -1219,7 +1223,8 @@ export class FinalNewUiComponent implements OnInit {
             final_arr.push({
               'key': final_arr.length+1, 
               'name': `${obj["name"]}`,
-              'parent': parentKey
+              'parent': parentKey,
+              'color' : lavgrad
             })
           }
         } 
@@ -1489,6 +1494,13 @@ export class FinalNewUiComponent implements OnInit {
             collection_name: this.collection_name,
             distinct_columns: this.distinct_tags_selected,
           };
+
+          if(this.frequency == -1){
+            parent["interval_type"] = "onchange",
+            parent["onchange_tags"] = this.onchange_tags_selected
+          }
+
+          
 
           this.backend_data.push(parent)
 
@@ -2522,7 +2534,7 @@ export class FinalNewUiComponent implements OnInit {
       }
   }
 
-  validateAggregateTimeBasedFormulaWithBrackets = (inp_formula_array) => {
+  validateAggregateTimeBasedFormulaWithBrackets = (inp_formula_array, showPopUp=true) => {
     let is_formula_valid = true;
     let formula_array = [],
       formula = '';
@@ -2608,11 +2620,15 @@ export class FinalNewUiComponent implements OnInit {
         return formula_array
       }
       else{
-        window.alert("InValid Formula - "+ formula)
+        if(showPopUp){
+         window.alert("InValid Formula - "+ formula)
+        }
         return false;
       }
     } else { 
-      window.alert("InValid Formula - "+ formula)
+      if(showPopUp){
+        window.alert("InValid Formula - "+ formula)
+       }
       return false;
     }
 
@@ -2621,7 +2637,7 @@ export class FinalNewUiComponent implements OnInit {
   }
 
 
-  validateAbsoluteFormulaWithBrackets = (inp_formula_array) => {
+  validateAbsoluteFormulaWithBrackets = (inp_formula_array,showPopUp=true) => {
     let is_formula_valid = true;
     let formula_array = [],
       formula = '';
@@ -2721,11 +2737,11 @@ export class FinalNewUiComponent implements OnInit {
         return formula_array
       }
       else{
-        window.alert("InValid Formula - "+ formula)
+        if(showPopUp) window.alert("InValid Formula - "+ formula)
         return false;
       }
     } else { 
-      window.alert("InValid Formula - "+ formula)
+      if(showPopUp) window.alert("InValid Formula - "+ formula)
       return false;
     }
 
@@ -3016,10 +3032,16 @@ export class FinalNewUiComponent implements OnInit {
       );
 
       if(this.frequency==1){
-        this.getJsonForEachSubFormulaBetweenBrackets(this.dropped_tags)
+        let temp_array = this.validateAbsoluteFormulaWithBrackets(this.dropped_tags,false)
+        if(temp_array){
+          this.getJsonForEachSubFormulaBetweenBrackets(this.dropped_tags)
+        }
       }
       else{
-        this.getJsonForEachSubFormulaBetweenBracketsAggregateTimeBasedFormula(this.dropped_tags)
+        let valid_aggregate_time_based_formula_array = this.validateAggregateTimeBasedFormulaWithBrackets(this.dropped_tags,false)
+        if(valid_aggregate_time_based_formula_array){
+          this.getJsonForEachSubFormulaBetweenBracketsAggregateTimeBasedFormula(this.dropped_tags)
+        }
       }
     }
 

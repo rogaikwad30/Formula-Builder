@@ -321,3 +321,57 @@
   .onChangeTags{
     margin: 22px 0px;
   }
+
+
+
+.c178231255{
+  background: rgb(178, 231, 255);
+}
+
+.c2532539{
+  background:rgb(253, 253, 9)
+}
+
+.c2002550{
+  background: rgb(200, 255, 0);
+}
+.c184232252 {
+  background: rgb(184, 232, 252);
+}
+.c255091{
+  background:rgb(255,0,91)
+}
+.c2552459{
+  background:rgb(255, 245, 9)
+}
+.c250244211{
+  background: rgb(250, 244, 211);
+}
+.c25513382{
+  background: rgb(255, 133, 82);
+}
+.c230230230{
+  background: rgb(230, 230, 230);
+}
+.c41115115{
+  background: rgb(41, 115, 115);
+}
+.c214203193{
+  background: rgb(214, 203, 193);
+}
+.c214169154{
+  background: rgb(214, 169, 154);
+}
+.c233250227{
+  background: rgb(233, 250, 227);
+}
+.c155162255{
+  background: rgb(155, 162, 255);
+}
+
+.configOption{
+  /* border: 1px solid rgb(245, 50, 50); */
+  height: calc(100% - 70px);
+  overflow: auto;
+  position: relative;
+}

@@ -38,6 +38,156 @@ export class FinalNewUiComponent implements OnInit {
   onchange_tags_selected = []
 
   data_sources = [
+{
+   // "_id" : ObjectId("6374bb0b0c5c8a938d08cf8b"),
+    "conf" : {
+        "collection" : "Archive-TotalizerRawData",
+        "path" : "localhost",
+        "dbname" : "SAR",
+        "table" : "TotalizerRawData",
+        "db_table" : "TotalizerRawData",
+        "columninfo" : [ 
+            {
+                "name" : "LogTime",
+                "type" : "time",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "SubMachineName",
+                "type" : "text",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "MachineName",
+                "type" : "text",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "ProdCount",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "LogTime_EP",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }
+        ]
+    },
+   // "updated_at" : ISODate("2022-11-16T15:57:23.181Z"),
+    "datatype" : "db",
+    "requesttype" : "data",
+    "id" : "data-source-1668594443",
+    "type" : "Archive",
+    "clientip" : "localhost",
+    "frequency" : 60,
+    "__v" : 0
+},
+{
+   // "_id" : ObjectId("6374b8e5ccdb4b8ee0ae4593"),
+    "conf" : {
+        "collection" : "Archive-TotalizerResults",
+        "path" : "localhost",
+        "dbname" : "SAR",
+        "table" : "TotalizerResults",
+        "db_table" : "TotalizerResults",
+        "columninfo" : [ 
+            {
+                "name" : "MachineName",
+                "type" : "text",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "SubMachineName",
+                "type" : "text",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "key_name",
+                "type" : "text",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "time_EP",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "time",
+                "type" : "time",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "totalizer",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }
+        ]
+    },
+    //"updated_at" : ISODate("2022-11-16T15:48:13.402Z"),
+    "datatype" : "db",
+    "requesttype" : "data",
+    "id" : "data-source-1668593893",
+    "type" : "Archive",
+    "clientip" : "localhost",
+    "frequency" : 60,
+    "__v" : 0
+},
     {
       conf: {
         collection: 'Archive-CrateData',
@@ -315,6 +465,4879 @@ export class FinalNewUiComponent implements OnInit {
       "frequency": 60,
       "__v": 0
     },
+    {
+      // "_id" : ObjectId("62cc04d58fe90266efd584f7"),
+      "conf" : {
+          "collection" : "Archive-REPORTING_REF_1",
+          "path" : "DESKTOP-NP7TK6N\\WINCC",
+          "dbname" : "CC_LEHA_NEW_21_09_28_19_19_25",
+          "table" : "REPORTING_REF_1",
+          "db_table" : "REPORTING",
+          "columninfo" : [ 
+              {
+                  "name" : "TK-101_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-101_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-101_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-101_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-101_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-101_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-102_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-102_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-102_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-102_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-102_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-102_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-103_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-103_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-103_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-103_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-103_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-103_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-104_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-104_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-104_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-104_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-104_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-104_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-105_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-105_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-105_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-105_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-105_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-105_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-106_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-106_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-106_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-106_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-106_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-106_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-107_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-107_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-107_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-107_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-107_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-107_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-108_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-108_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-108_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-108_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-108_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-108_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-109_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-109_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-109_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-109_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-109_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-109_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-110_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-110_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-110_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-110_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-110_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-110_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-111_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-111_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-111_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-111_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-111_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-111_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-112_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-112_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-112_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-112_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-112_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-112_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-113_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-113_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-113_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-113_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-113_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-113_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-114_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-114_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-114_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-114_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-114_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-114_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-115_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-115_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-115_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-115_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-115_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-115_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-116_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-116_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-116_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-116_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-116_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-116_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-117_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-117_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-117_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-117_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-117_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-117_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-118_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-118_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-118_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-118_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-118_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-118_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-119_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-119_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-119_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-119_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-119_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-119_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-120_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-120_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-120_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-120_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-120_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-120_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-121_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-121_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-121_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-121_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-121_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-121_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-122_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-122_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-122_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-122_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-122_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-122_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-302_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-302_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-302_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-302_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-302_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-302_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-303_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-303_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-303_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-303_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-303_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-303_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-305_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-305_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-305_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-305_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-305_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-305_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-306_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-306_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-306_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-306_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-306_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-306_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-307_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-307_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-307_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-307_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-307_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-307_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-501_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-501_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-501_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-501_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-501_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-501_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-502_OBSERV_DENSITY",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-502_PRODUCT_CODE",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-502_PRODUCT_LVL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-502_PRODUCT_MASS",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-502_PRODUCT_TEMP",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "TK-502_TOT_OBSERV_VOL",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "Timestamp",
+                  "type" : "time",
+                  "property" : "sort",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }
+          ],
+          "username" : "sa",
+          "password" : "CIMPLICITY8.2",
+          "portnumber" : 1433
+      },
+      // "updated_at" : ISODate("2022-10-31T16:20:09.825Z"),
+      "datatype" : "db",
+      "requesttype" : "data",
+      "id" : "data-source-1657537749",
+      "type" : "Archive",
+      "clientip" : "localhost",
+      "dstype" : "WINCC-SQL",
+      "__v" : 0,
+      "connectorname" : "WinCC Tag Logging (7.4 SP1 + Update 4 and Above)",
+      "frequency" : 60
+  },
+  {
+    // "_id" : ObjectId("636a23323b58046a9267b6ee"),
+    "conf" : {
+        "collection" : "Archive-tbl_production_log",
+        "path" : "localhost",
+        "dbname" : "SAR",
+        "table" : "tbl_production_log",
+        "db_table" : "tbl_production_log",
+        "columninfo" : [ 
+            {
+                "name" : "ProdCountlog_Id",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "LogTime",
+                "type" : "time",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "Mapping_Id",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "SubMachId",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "Shift_Id",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "Variant_Id",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "Hour_Id",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "ProdCount",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "OrgLogTime",
+                "type" : "time",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "SubMachine_Name",
+                "type" : "text",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "Machine_Name",
+                "type" : "text",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "Machines_id",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "ShiftName",
+                "type" : "text",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "VariantName",
+                "type" : "text",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "Line_Name",
+                "type" : "text",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "LogTime_EP",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "OrgLogTime_EP",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }
+        ]
+    },
+    // "updated_at" : ISODate("2022-11-08T15:06:50.990Z"),
+    "datatype" : "db",
+    "requesttype" : "data",
+    "id" : "data-source-1667900210",
+    "type" : "Archive",
+    "clientip" : "localhost",
+    "frequency" : 60,
+    "__v" : 0
+},
+  {
+    // "_id" : ObjectId("633c05cd4b4abbfe27db1d7c"),
+    "conf" : {
+        "collection" : "Archive-opc-Mixing_NSP_Tags",
+        "path" : "bit-line-a.ABB.AfwOpcDaSurrogate",
+        "dbname" : "IBPL_",
+        "table" : "Mixing_NSP_Tags",
+        "db_table" : "Mixing_NSP_Tags",
+        "columninfo" : [ 
+            {
+                "name" : "Line",
+                "type" : "text",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Line"
+            }, 
+            {
+                "name" : "Ingredient",
+                "type" : "text",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Ingredient"
+            }, 
+            {
+                "name" : "Batch Count",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Batch Count"
+            }, 
+            {
+                "name" : "Set",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Set"
+            }, 
+            {
+                "name" : "Actual",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Actual"
+            }, 
+            {
+                "name" : "NewEra_Batch:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "NewEra_Batch:Actual_Value"
+            }, 
+            {
+                "name" : "Liquid_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Liquid_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Powder_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Powder_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Powder_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Powder_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Powder_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Powder_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Powder_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Powder_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Liquid_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Liquid_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Liquid_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Liquid_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Liquid_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Liquid_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Liquid_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Liquid_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Liquid_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Liquid_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Flavour1_MBK_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Flavour1_MBK_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Flavour1_MBK_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Flavour1_MBK_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Liquid_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Liquid_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Biscuitdust_tol_bc:value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Biscuitdust_tol_bc:value"
+            }, 
+            {
+                "name" : "Sugar_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Sugar_Tot_BC:Value"
+            }, 
+            {
+                "name" : "APalmOil_BC:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "APalmOil_BC:Actual_Value"
+            }, 
+            {
+                "name" : "Flavour1_MBK_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Flavour1_MBK_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Powder_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Powder_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Liquid_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Liquid_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Liquid_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Liquid_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Liquid_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Liquid_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Powder_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Powder_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Powder_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Powder_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Flavour2_NC_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Flavour2_NC_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Flavour2_NC_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Flavour2_NC_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Powder_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Powder_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Powder_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Powder_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Powder_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Powder_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Powder_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Powder_Tot_BC:Value"
+            }, 
+            {
+                "name" : "Flavour3_Nice_Tot_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Flavour3_Nice_Tot_BC:Value"
+            }, 
+            {
+                "name" : "BFlour_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BFlour_BC:Value"
+            }, 
+            {
+                "name" : "BGSugar_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BGSugar_BC:Value"
+            }, 
+            {
+                "name" : "BPowder_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BPowder_BC:Value"
+            }, 
+            {
+                "name" : "BPowder_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BPowder_BC:Value"
+            }, 
+            {
+                "name" : "BPowder_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BPowder_BC:Value"
+            }, 
+            {
+                "name" : "BPowder_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BPowder_BC:Value"
+            }, 
+            {
+                "name" : "BPowder_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BPowder_BC:Value"
+            }, 
+            {
+                "name" : "BLQD_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BLQD_BC:Value"
+            }, 
+            {
+                "name" : "BLQD_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BLQD_BC:Value"
+            }, 
+            {
+                "name" : "BLQD_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BLQD_BC:Value"
+            }, 
+            {
+                "name" : "BLQD_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BLQD_BC:Value"
+            }, 
+            {
+                "name" : "BLQD_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BLQD_BC:Value"
+            }, 
+            {
+                "name" : "BFlavour_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BFlavour_BC:Value"
+            }, 
+            {
+                "name" : "BFlavour_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BFlavour_BC:Value"
+            }, 
+            {
+                "name" : "BFlavour_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BFlavour_BC:Value"
+            }, 
+            {
+                "name" : "Root/PLCConnect Servers/OPC Servers/BIL_Creamer/BCreamer_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Root/PLCConnect Servers/OPC Servers/BIL_Creamer/BCreamer_BC:Value"
+            }, 
+            {
+                "name" : "Root/PLCConnect Servers/OPC Servers/BIL_Creamer/BCreamer_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Root/PLCConnect Servers/OPC Servers/BIL_Creamer/BCreamer_BC:Value"
+            }, 
+            {
+                "name" : "BSugar_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BSugar_BC:Value"
+            }, 
+            {
+                "name" : "Root/PLCConnect Servers/OPC Servers/BIL_Creamer/BCreamer_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Root/PLCConnect Servers/OPC Servers/BIL_Creamer/BCreamer_BC:Value"
+            }, 
+            {
+                "name" : "BPalm_Oil_BC:Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BPalm_Oil_BC:Value"
+            }, 
+            {
+                "name" : "NewEra_set_Wt:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "NewEra_set_Wt:Actual_Value"
+            }, 
+            {
+                "name" : "Salt_Sol_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Salt_Sol_SW:Actual_Value"
+            }, 
+            {
+                "name" : "SBC_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "SBC_SW:Actual_Value"
+            }, 
+            {
+                "name" : "Vitamin_PreMix_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Vitamin_PreMix_SW:Actual_Value"
+            }, 
+            {
+                "name" : "Calcium_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Calcium_SW:Actual_Value"
+            }, 
+            {
+                "name" : "ABC_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "ABC_SW:Actual_Value"
+            }, 
+            {
+                "name" : "Lecithin_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Lecithin_SW:Actual_Value"
+            }, 
+            {
+                "name" : "DMG_Paste_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "DMG_Paste_SW:Actual_Value"
+            }, 
+            {
+                "name" : "SMP_Sol_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "SMP_Sol_SW:Actual_Value"
+            }, 
+            {
+                "name" : "FCCM_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "FCCM_SW:Actual_Value"
+            }, 
+            {
+                "name" : "Invert_Cyrup_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Invert_Cyrup_SW:Actual_Value"
+            }, 
+            {
+                "name" : "Vanilla_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Vanilla_SW:Actual_Value"
+            }, 
+            {
+                "name" : "FFM_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "FFM_SW:Actual_Value"
+            }, 
+            {
+                "name" : "Water_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Water_SW:Actual_Value"
+            }, 
+            {
+                "name" : "ACreamer_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "ACreamer_SW:Actual_Value"
+            }, 
+            {
+                "name" : "Sugar_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Sugar_SW:Actual_Value"
+            }, 
+            {
+                "name" : "APalmOil_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "APalmOil_SW:Actual_Value"
+            }, 
+            {
+                "name" : "BIL_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BIL_SW:Actual_Value"
+            }, 
+            {
+                "name" : "Salt_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Salt_SW:Actual_Value"
+            }, 
+            {
+                "name" : "Datum_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Datum_SW:Actual_Value"
+            }, 
+            {
+                "name" : "Malt_Extract_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Malt_Extract_SW:Actual_Value"
+            }, 
+            {
+                "name" : "Glocuse_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Glocuse_SW:Actual_Value"
+            }, 
+            {
+                "name" : "Montreal_Sugar_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Montreal_Sugar_SW:Actual_Value"
+            }, 
+            {
+                "name" : "Malton_Dextrin_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Malton_Dextrin_SW:Actual_Value"
+            }, 
+            {
+                "name" : "BCG19_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BCG19_SW:Actual_Value"
+            }, 
+            {
+                "name" : "BM29_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BM29_SW:Actual_Value"
+            }, 
+            {
+                "name" : "Starch_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Starch_SW:Actual_Value"
+            }, 
+            {
+                "name" : "Coconut_Milk_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Coconut_Milk_SW:Actual_Value"
+            }, 
+            {
+                "name" : "Lactose_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Lactose_SW:Actual_Value"
+            }, 
+            {
+                "name" : "WHEY_PWD_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "WHEY_PWD_SW:Actual_Value"
+            }, 
+            {
+                "name" : "Toasted_Coconut_SW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Toasted_Coconut_SW:Actual_Value"
+            }, 
+            {
+                "name" : "BFlr_SW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BFlr_SW:Actual_value"
+            }, 
+            {
+                "name" : "BGSugar_SW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BGSugar_SW:Actual_value"
+            }, 
+            {
+                "name" : "BSalt_SW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BSalt_SW:Actual_value"
+            }, 
+            {
+                "name" : "Bsbc_SW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Bsbc_SW:Actual_value"
+            }, 
+            {
+                "name" : "BVitamin_SW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BVitamin_SW:Actual_value"
+            }, 
+            {
+                "name" : "BCalcium_SW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BCalcium_SW:Actual_value"
+            }, 
+            {
+                "name" : "BABC_SW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BABC_SW:Actual_value"
+            }, 
+            {
+                "name" : "BLecithin_SW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BLecithin_SW:Actual_value"
+            }, 
+            {
+                "name" : "BGMS_SW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BGMS_SW:Actual_value"
+            }, 
+            {
+                "name" : "BSMP_SW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BSMP_SW:Actual_value"
+            }, 
+            {
+                "name" : "BMILK_SW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BMILK_SW:Actual_value"
+            }, 
+            {
+                "name" : "BSyrup_SW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BSyrup_SW:Actual_value"
+            }, 
+            {
+                "name" : "BVanila_SW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BVanila_SW:Actual_value"
+            }, 
+            {
+                "name" : "BBil_SW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BBil_SW:Actual_value"
+            }, 
+            {
+                "name" : "BFFM_SW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BFFM_SW:Actual_value"
+            }, 
+            {
+                "name" : "BWater_SW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BWater_SW:Actual_value"
+            }, 
+            {
+                "name" : "BBiscuitDust_SW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BBiscuitDust_SW:Actual_value"
+            }, 
+            {
+                "name" : "BSugar_SW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BSugar_SW:Actual_value"
+            }, 
+            {
+                "name" : "BCream_AW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BCream_AW:Actual_value"
+            }, 
+            {
+                "name" : "Act_qty:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Act_qty:Actual_Value"
+            }, 
+            {
+                "name" : "Maida_Wt_Actual:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Maida_Wt_Actual:Actual_Value"
+            }, 
+            {
+                "name" : "Salt_Sol_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Salt_Sol_AW:Actual_Value"
+            }, 
+            {
+                "name" : "SBC_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "SBC_AW:Actual_Value"
+            }, 
+            {
+                "name" : "Vitamin_PreMix_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Vitamin_PreMix_AW:Actual_Value"
+            }, 
+            {
+                "name" : "Calcium_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Calcium_AW:Actual_Value"
+            }, 
+            {
+                "name" : "ABC_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "ABC_AW:Actual_Value"
+            }, 
+            {
+                "name" : "Lecithin_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Lecithin_AW:Actual_Value"
+            }, 
+            {
+                "name" : "DMG_Paste_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "DMG_Paste_AW:Actual_Value"
+            }, 
+            {
+                "name" : "SMP_Sol_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "SMP_Sol_AW:Actual_Value"
+            }, 
+            {
+                "name" : "FCCM_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "FCCM_AW:Actual_Value"
+            }, 
+            {
+                "name" : "Invert_Cyrup_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Invert_Cyrup_AW:Actual_Value"
+            }, 
+            {
+                "name" : "Vanilla_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Vanilla_AW:Actual_Value"
+            }, 
+            {
+                "name" : "FFM_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "FFM_AW:Actual_Value"
+            }, 
+            {
+                "name" : "Water_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Water_AW:Actual_Value"
+            }, 
+            {
+                "name" : "ACreamer_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "ACreamer_AW:Actual_Value"
+            }, 
+            {
+                "name" : "Sugar_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Sugar_AW:Actual_Value"
+            }, 
+            {
+                "name" : "APalmOil_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "APalmOil_AW:Actual_Value"
+            }, 
+            {
+                "name" : "BIL_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BIL_AW:Actual_Value"
+            }, 
+            {
+                "name" : "Salt_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Salt_AW:Actual_Value"
+            }, 
+            {
+                "name" : "Datum_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Datum_AW:Actual_Value"
+            }, 
+            {
+                "name" : "Malt_Extract_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Malt_Extract_AW:Actual_Value"
+            }, 
+            {
+                "name" : "Glocuse_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Glocuse_AW:Actual_Value"
+            }, 
+            {
+                "name" : "Montreal_Sugar_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Montreal_Sugar_AW:Actual_Value"
+            }, 
+            {
+                "name" : "Malton_Dextrin_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Malton_Dextrin_AW:Actual_Value"
+            }, 
+            {
+                "name" : "BCG19_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BCG19_AW:Actual_Value"
+            }, 
+            {
+                "name" : "BM29_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BM29_AW:Actual_Value"
+            }, 
+            {
+                "name" : "Starch_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Starch_AW:Actual_Value"
+            }, 
+            {
+                "name" : "Coconut_Milk_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Coconut_Milk_AW:Actual_Value"
+            }, 
+            {
+                "name" : "Lactose_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Lactose_AW:Actual_Value"
+            }, 
+            {
+                "name" : "WHEY_PWD_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "WHEY_PWD_AW:Actual_Value"
+            }, 
+            {
+                "name" : "Toasted_Coconut_AW:Actual_Value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Toasted_Coconut_AW:Actual_Value"
+            }, 
+            {
+                "name" : "BFlour_AW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BFlour_AW:Actual_value"
+            }, 
+            {
+                "name" : "BGSugar_AW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BGSugar_AW:Actual_value"
+            }, 
+            {
+                "name" : "BSalt_AW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BSalt_AW:Actual_value"
+            }, 
+            {
+                "name" : "Bsbc_AW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Bsbc_AW:Actual_value"
+            }, 
+            {
+                "name" : "BVitamin_AW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BVitamin_AW:Actual_value"
+            }, 
+            {
+                "name" : "BCalcium_AW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BCalcium_AW:Actual_value"
+            }, 
+            {
+                "name" : "BABC_AW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BABC_AW:Actual_value"
+            }, 
+            {
+                "name" : "BLecithin_AW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BLecithin_AW:Actual_value"
+            }, 
+            {
+                "name" : "BGMS_AW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BGMS_AW:Actual_value"
+            }, 
+            {
+                "name" : "BSMP_AW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BSMP_AW:Actual_value"
+            }, 
+            {
+                "name" : "BMILK_AW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BMILK_AW:Actual_value"
+            }, 
+            {
+                "name" : "BSyrup_AW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BSyrup_AW:Actual_value"
+            }, 
+            {
+                "name" : "BVanila_AW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BVanila_AW:Actual_value"
+            }, 
+            {
+                "name" : "BBil_AW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BBil_AW:Actual_value"
+            }, 
+            {
+                "name" : "BFFM_AW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BFFM_AW:Actual_value"
+            }, 
+            {
+                "name" : "BWater_AW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BWater_AW:Actual_value"
+            }, 
+            {
+                "name" : "BBiscuitDust_AW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BBiscuitDust_AW:Actual_value"
+            }, 
+            {
+                "name" : "BSugar_AW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BSugar_AW:Actual_value"
+            }, 
+            {
+                "name" : "BCream_AW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BCream_AW:Actual_value"
+            }, 
+            {
+                "name" : "BPalm_Oil_AW:Actual_value",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "BPalm_Oil_AW:Actual_value"
+            }, 
+            {
+                "name" : "Archive-opc-Mixing_NSP_Tags_TIMESTAMP",
+                "type" : "time",
+                "property" : "sort",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false,
+                "itemName" : "Archive-opc-Mixing_NSP_Tags_TIMESTAMP"
+            }
+        ],
+        "spath" : "",
+        "cname" : "IBPL_",
+        "rmode" : "HOT"
+    },
+    // "updated_at" : ISODate("2022-10-04T15:37:09.577Z"),
+    "datatype" : "opc",
+    "requesttype" : "data",
+    "id" : "data-source-1664878029",
+    "type" : "Archive",
+    "clientip" : "localhost",
+    "dstype" : "OPC-DA-NEW",
+    "__v" : 0,
+    "frequency" : 60000
+},
+  {
+    // "_id" : ObjectId("62d157978dec20fb53a6062a"),
+    "conf" : {
+        "collection" : "Archive-REPORTING_REF_2",
+        "path" : "DESKTOP-6F9GBB4\\WINCC",
+        "dbname" : "CC_P-81_FRA_22_07_13_17_01_56",
+        "table" : "REPORTING_REF_2",
+        "db_table" : "REPORTING",
+        "columninfo" : [ 
+            {
+                "name" : "TK-401_OBSERV_DENSITY",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-401_PRODUCT_CODE",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-401_PRODUCT_LVL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-401_PRODUCT_MASS",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-401_PRODUCT_TEMP",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-401_TOT_OBSERV_VOL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-402_OBSERV_DENSITY",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-402_PRODUCT_CODE",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-402_PRODUCT_LVL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-402_PRODUCT_MASS",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-402_PRODUCT_TEMP",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-402_TOT_OBSERV_VOL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-403_OBSERV_DENSITY",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-403_PRODUCT_CODE",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-403_PRODUCT_LVL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-403_PRODUCT_MASS",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-403_PRODUCT_TEMP",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-403_TOT_OBSERV_VOL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-404_OBSERV_DENSITY",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-404_PRODUCT_CODE",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-404_PRODUCT_LVL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-404_PRODUCT_MASS",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-404_PRODUCT_TEMP",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-404_TOT_OBSERV_VOL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-405_OBSERV_DENSITY",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-405_PRODUCT_CODE",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-405_PRODUCT_LVL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-405_PRODUCT_MASS",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-405_PRODUCT_TEMP",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-405_TOT_OBSERV_VOL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-406_OBSERV_DENSITY",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-406_PRODUCT_CODE",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-406_PRODUCT_LVL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-406_PRODUCT_MASS",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-406_PRODUCT_TEMP",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-406_TOT_OBSERV_VOL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-407_OBSERV_DENSITY",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-407_PRODUCT_CODE",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-407_PRODUCT_LVL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-407_PRODUCT_MASS",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-407_PRODUCT_TEMP",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-407_TOT_OBSERV_VOL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-408_OBSERV_DENSITY",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-408_PRODUCT_CODE",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-408_PRODUCT_LVL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-408_PRODUCT_MASS",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-408_PRODUCT_TEMP",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-408_TOT_OBSERV_VOL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-410_OBSERV_DENSITY",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-410_PRODUCT_CODE",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-410_PRODUCT_LVL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-410_PRODUCT_MASS",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-410_PRODUCT_TEMP",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-410_TOT_OBSERV_VOL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-411_OBSERV_DENSITY",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-411_PRODUCT_CODE",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-411_PRODUCT_LVL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-411_PRODUCT_MASS",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-411_PRODUCT_TEMP",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-411_TOT_OBSERV_VOL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-412_OBSERV_DENSITY",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-412_PRODUCT_CODE",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-412_PRODUCT_LVL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-412_PRODUCT_MASS",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-412_PRODUCT_TEMP",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-412_TOT_OBSERV_VOL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-413_OBSERV_DENSITY",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-413_PRODUCT_CODE",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-413_PRODUCT_LVL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-413_PRODUCT_MASS",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-413_PRODUCT_TEMP",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-413_TOT_OBSERV_VOL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-414_OBSERV_DENSITY",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-414_PRODUCT_CODE",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-414_PRODUCT_LVL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-414_PRODUCT_MASS",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-414_PRODUCT_TEMP",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-414_TOT_OBSERV_VOL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-415_OBSERV_DENSITY",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-415_PRODUCT_CODE",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-415_PRODUCT_LVL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-415_PRODUCT_MASS",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-415_PRODUCT_TEMP",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-415_TOT_OBSERV_VOL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-907_1_OBSERV_DENSITY",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-907_1_PRODUCT_CODE",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-907_1_PRODUCT_LVL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-907_1_PRODUCT_MASS",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-907_1_PRODUCT_TEMP",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-907_1_TOT_OBSERV_VOL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-907_2_OBSERV_DENSITY",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-907_2_PRODUCT_CODE",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-907_2_PRODUCT_LVL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-907_2_PRODUCT_MASS",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-907_2_PRODUCT_TEMP",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-907_2_TOT_OBSERV_VOL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-907_3_OBSERV_DENSITY",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-907_3_PRODUCT_CODE",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-907_3_PRODUCT_LVL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-907_3_PRODUCT_MASS",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-907_3_PRODUCT_TEMP",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "TK-907_3_TOT_OBSERV_VOL",
+                "type" : "number",
+                "property" : "none",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }, 
+            {
+                "name" : "Timestamp",
+                "type" : "time",
+                "property" : "sort",
+                "format" : "none",
+                "isMatchColumn" : false,
+                "isUniqueTimeColumn" : false,
+                "isenddate" : false,
+                "isstartdate" : false
+            }
+        ],
+        "username" : "sa",
+        "password" : "CIMPLICITY8.2",
+        "portnumber" : 1433
+    },
+    // "updated_at" : ISODate("2022-10-31T16:28:12.839Z"),
+    "datatype" : "db",
+    "requesttype" : "data",
+    "id" : "data-source-1657886615",
+    "type" : "Archive",
+    "clientip" : "localhost",
+    "dstype" : "WINCC-SQL",
+    "__v" : 0,
+    "connectorname" : "WinCC Tag Logging (7.4 SP1)",
+    "frequency" : 10
+},
+    {
+      // "_id" : ObjectId("635a4d571fd22bb519717d36"),
+      "conf" : {
+          "collection" : "Archive-Melsec_OEE_Results",
+          "path" : "localhost",
+          "dbname" : "SAR",
+          "table" : "Melsec_OEE_Results",
+          "db_table" : "Melsec_OEE_Results",
+          "columninfo" : [ 
+              {
+                  "name" : "Product_count",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "Rejection",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "Avail_Time",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "Loss_Time",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }, 
+              {
+                  "name" : "Ideal_Cycle_Time",
+                  "type" : "number",
+                  "property" : "none",
+                  "format" : "none",
+                  "isMatchColumn" : false,
+                  "isUniqueTimeColumn" : false,
+                  "isenddate" : false,
+                  "isstartdate" : false
+              }
+          ]
+      },
+      "__v" : 0,
+      "clientip" : "localhost",
+      "datatype" : "db",
+      "frequency" : 60,
+      "id" : "data-source-1666863512",
+      "requesttype" : "data",
+      "type" : "Archive",
+      // "updated_at" : ISODate("2022-10-27T09:38:32.708Z")
+  },
     { 
       "conf" : {
           "collection" : "Archive-raw_location_data",
@@ -571,11 +5594,11 @@ export class FinalNewUiComponent implements OnInit {
   {
     "_id" : "633403d56108171beaa42720",
     "conf" : {
-        "collection" : "Archive-MELSEC_OEE_DATA",
+        "collection" : "Archive-Melsec_Raw_Data",
         "path" : "localhost",
         "dbname" : "SAR",
-        "table" : "MELSEC_OEE_DATA",
-        "db_table" : "MELSEC_OEE_DATA",
+        "table" : "Archive-Melsec_Raw_Data",
+        "db_table" : "Archive-Melsec_Raw_Data",
         "columninfo" : [ 
             {
                 "name" : "RUNTIME",
@@ -677,74 +5700,6 @@ export class FinalNewUiComponent implements OnInit {
     "clientip" : "localhost",
     "frequency" : 60,
     "__v" : 0
-},
-{ 
-  "conf" : {
-      "collection" : "Archive-MELSEC_OEE",
-      "path" : "localhost",
-      "dbname" : "SAR",
-      "table" : "MELSEC",
-      "db_table" : "MELSEC",
-      "columninfo" : [ 
-          {
-              "name" : "ProdCount",
-              "type" : "number",
-              "property" : "none",
-              "format" : "none",
-              "isMatchColumn" : false,
-              "isUniqueTimeColumn" : false,
-              "isenddate" : false,
-              "isstartdate" : false
-          }, 
-          {
-              "name" : "Rejection",
-              "type" : "number",
-              "property" : "none",
-              "format" : "none",
-              "isMatchColumn" : false,
-              "isUniqueTimeColumn" : false,
-              "isenddate" : false,
-              "isstartdate" : false
-          }, 
-          {
-              "name" : "AvailTime",
-              "type" : "number",
-              "property" : "none",
-              "format" : "none",
-              "isMatchColumn" : false,
-              "isUniqueTimeColumn" : false,
-              "isenddate" : false,
-              "isstartdate" : false
-          }, 
-          {
-              "name" : "Loss",
-              "type" : "number",
-              "property" : "none",
-              "format" : "none",
-              "isMatchColumn" : false,
-              "isUniqueTimeColumn" : false,
-              "isenddate" : false,
-              "isstartdate" : false
-          }, 
-          {
-              "name" : "IdealCycleTime",
-              "type" : "number",
-              "property" : "none",
-              "format" : "none",
-              "isMatchColumn" : false,
-              "isUniqueTimeColumn" : false,
-              "isenddate" : false,
-              "isstartdate" : false
-          }
-      ]
-  },
-  "datatype" : "db",
-  "requesttype" : "data",
-  "id" : "data-source-1664362712",
-  "type" : "Archive",
-  "clientip" : "localhost",
-  "frequency" : 60,
-  "__v" : 0
 },
     {
       conf: {
@@ -1076,6 +6031,10 @@ export class FinalNewUiComponent implements OnInit {
     saved_tags: [],
   };
 
+  copy_tags = []
+  copy_times = []
+  copy_time = ""
+  copy_operator = ""
   datasources_tags_copy = [];
   saved_tags_copy = [];
 
@@ -1152,7 +6111,43 @@ export class FinalNewUiComponent implements OnInit {
   ];
   operators_copy = JSON.parse(JSON.stringify(this.operators));
 
+  colors = [ [178,231,255], [253, 253, 9], [200, 255, 0], [184, 232, 252],  [255,0,91],  [255, 245, 9], [250, 244, 211], [255, 133, 82], [230, 230, 230], [41, 115, 115],[214, 203, 193],[214, 169, 154], [233, 250, 227],[155, 162, 255]]
+  tagsColorsDict = {}
+
+  getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
+  
   constructor(private route: ActivatedRoute, private http: HttpClient) {}
+
+  onEditCopyTimes(obj){
+    console.log(obj);
+    
+    this.copy_time = obj['format']
+    this.copy_operator = obj['operator']
+  }
+
+  onDeleteCopyTimes(obj){
+    this.copy_times = this.copy_times.filter(item => item !== obj)
+  }
+
+  onChangeCopyTime(event){
+     this.copy_time = event.target.value
+  }
+  
+  onSaveCopyConfig(){
+    if(!this.copy_time || !this.copy_operator){
+      return window.alert("configs missings")
+    }
+    this.copy_times.push({
+      'id' : this.copy_tags.length,
+      'hour' : parseInt(this.copy_time.split(":")[0]),
+      'minutes': parseInt(this.copy_time.split(":")[1]),
+      'format' : this.copy_time,
+      'operator': this.copy_operator,
+      "seconds" : 0
+    }) 
+  }
 
   checkIfFormulaContainsOnlyOneTypeOpearations = (arr) => {
     let op1 = ['+', '-'];
@@ -1190,21 +6185,23 @@ export class FinalNewUiComponent implements OnInit {
   };
 
   $ = go.GraphObject.make
-  constructGoJSFormattedData = (final_tag,final_arr=[],parentKey=-1) => {
-  
-    let lavgrad = this.$(go.Brush, "Linear", { 0: "#EF9EFA", 1: "#A570AD" });
-    
+  constructGoJSFormattedData = (final_tag,final_arr=[],parentKey=-1,rgb=this.colors[this.getRandomInt(this.colors.length)], level=1, ind = 0) => {    
     if(!final_tag) return final_arr
-
+    this.tagsColorsDict[ind] = rgb
+    let levelColor = `rgba(${rgb[0]},${rgb[1]},${rgb[2]},${level})`
     if(parentKey==-1){
       parentKey = 1
       final_arr.push({ 
         'key': parentKey, 
         'name': `${final_tag["name"]}`,
-        'color' : lavgrad
+        'color' : levelColor
       })
     }
+    
+      // levelColor = `rgba(${rgb[0]},${rgb[1]},${rgb[2]},${level-0.25})`
 
+      // console.log("level - ", final_tag);
+      
       if("operands" in final_tag){
         for(let i=0;i<final_tag["operands"].length;i++){
           let obj = final_tag["operands"][i]
@@ -1214,17 +6211,17 @@ export class FinalNewUiComponent implements OnInit {
               'key': final_arr.length+1, 
               'name': `${obj["name"]}`,
               'parent': parentKey,
-              'color' : lavgrad
+              'color' : levelColor
             })
     
-            final_arr = this.constructGoJSFormattedData(obj,final_arr,final_arr.length)
+            final_arr = this.constructGoJSFormattedData(obj,final_arr,final_arr.length, rgb, level-0.4,ind)
           } 
           else{
             final_arr.push({
               'key': final_arr.length+1, 
               'name': `${obj["name"]}`,
               'parent': parentKey,
-              'color' : lavgrad
+              'color' : `rgba(${rgb[0]},${rgb[1]},${rgb[2]},${0.015})`
             })
           }
         } 
@@ -1233,7 +6230,8 @@ export class FinalNewUiComponent implements OnInit {
         final_arr.push({
           'key': final_arr.length+1, 
           'name': `${final_tag["name"]}`,
-          'parent': parentKey
+          'parent': parentKey,
+          'color':"red"
         })
       }
 
@@ -1399,16 +6397,24 @@ export class FinalNewUiComponent implements OnInit {
     }
   };
 
-  constructGoJSFormattedData0 = (data) => {
-    // const arr = []
-    // for(let i in data){
-    //   arr.push(data[i])
-    // }
-
-    console.log("Forming Tree view - ", data);
+  constructGoJSFormattedData0 = (data) => { 
+    let configuratingInd = 0, saved_already=1
+    for (let i of this.tags.derived_tags){
+      if(i.name == this.configurating_tag){ 
+        saved_already = 0
+        break
+      } 
+      configuratingInd++
+    }
+    
+    if(saved_already){
+      configuratingInd = this.getRandomInt(this.colors.length)
+    }
+    console.log(this.tagsColorsDict, configuratingInd);
     
 
-    let array = this.constructGoJSFormattedData(data)
+
+    let array = this.constructGoJSFormattedData(data, [] , -1,this.tagsColorsDict[configuratingInd],1, configuratingInd)
 
     this.model = new go.TreeModel(array)
   }
@@ -1500,8 +6506,13 @@ export class FinalNewUiComponent implements OnInit {
             parent["onchange_tags"] = this.onchange_tags_selected
           }
 
-          
-
+          if(this.frequency==-2){
+            parent["interval_type"] = "copyDocument",
+            parent["config"] = {
+              'times' : this.copy_times,
+              'tags' : this.copy_tags
+            }
+          }
           this.backend_data.push(parent)
 
         }        
@@ -2032,8 +7043,7 @@ export class FinalNewUiComponent implements OnInit {
         }
       }
 
-      console.log("Simple JSON - ", data);
-      // this.constructGoJSFormattedData0(data)
+      console.log("Simple JSON - ", data); 
       
       return data
     } else {
@@ -2105,8 +7115,7 @@ export class FinalNewUiComponent implements OnInit {
         }
       }
       console.log("Mixed JSON - ", data);
-
-      // this.constructGoJSFormattedData0(data)
+ 
       
       return data 
     }
@@ -2231,8 +7240,7 @@ export class FinalNewUiComponent implements OnInit {
       }
 
 
-      console.log("Simple JSON - ", data, processed_array);
-      // this.constructGoJSFormattedData0(data)
+      console.log("Simple JSON - ", data, processed_array); 
       
       return data
     } else {
@@ -2303,9 +7311,7 @@ export class FinalNewUiComponent implements OnInit {
           }
         }
       }
-      console.log("Mixed JSON - ", data);
-
-      // this.constructGoJSFormattedData0(data)
+      console.log("Mixed JSON - ", data); 
       
       return data 
     }
@@ -2458,8 +7464,7 @@ export class FinalNewUiComponent implements OnInit {
         const final_data = this.getAbsoluteFormulaJson(newArr)
         if(final_data){
           this.final_absolute_json = final_data
-        }
-        console.log("Here's your json ");
+        } 
         console.log();
         console.log(this.final_absolute_json);
         console.log();
@@ -2932,6 +7937,8 @@ export class FinalNewUiComponent implements OnInit {
               this.formula_info = Response['data'];
               this.time_col = Response['data']['time_column'];
               this.frequency = Response['data']['interval'];
+              this.copy_tags = Response['data']['data']['copy_tags'] || []
+              this.copy_times = Response['data']['data']['copy_times'] || []
               console.log('Res - ', Response);
             }
           } else {
@@ -2979,9 +7986,12 @@ export class FinalNewUiComponent implements OnInit {
   onAddingTag = () => {
     let ind = this.tags.derived_tags.length;
 
+    this.tagsColorsDict[ind] = this.colors[this.getRandomInt(this.colors.length)]
+
     this.tags.derived_tags.push({
       name: 'tag-' + ind.toString(),
       type: 'derived',
+      color : `c${this.tagsColorsDict[ind][0]}${this.tagsColorsDict[ind][1]}${this.tagsColorsDict[ind][2]}`
     });
   };
 
@@ -2994,7 +8004,7 @@ export class FinalNewUiComponent implements OnInit {
     let is_tag_saved = false;
     if (tag_name && tag_name != 'NA') {
       console.log('Saved tags over here are : ', this.tags.saved_tags);
-      // search if the tag is saved or not
+      // search if the tag is saved or not 
       for (let obj of this.tags.saved_tags) {
         if (obj['name'] == tag_name) {
           this.dropped_tags = obj['formula_array'];
@@ -3004,7 +8014,7 @@ export class FinalNewUiComponent implements OnInit {
           this.is_it_final_tag = obj['is_it_final_tag'];
           this.constructGoJSFormattedData0(obj['data'])
           break;
-        }
+        } 
       }
 
       if (!is_tag_saved) {
@@ -3152,8 +8162,13 @@ export class FinalNewUiComponent implements OnInit {
         // "_id" : this.formula_id,
         saved_tags: this.tags.saved_tags,
         time_column: this.time_col,
-        data: {},
+        data: {
+          'copy_tags' : this.copy_tags,
+          'copy_times' : this.copy_times
+        }
       };
+
+
 
       console.log('Process : ', this.tags.saved_tags);
 
@@ -3177,11 +8192,11 @@ export class FinalNewUiComponent implements OnInit {
   };
 
   saveBackendFormulasData = () => {
-    if (this.backend_data.length == 0) {
-      return window.alert(
-        'No Tags added to save. Please add at least 1 tag to proceed.'
-      );
-    }
+    // if (this.backend_data.length == 0) {
+    //   return window.alert(
+    //     'No Tags added to save. Please add at least 1 tag to proceed.'
+    //   );
+    // }
 
     let url = 'http://localhost:5000/save-all-formulas';
     let request_body = {

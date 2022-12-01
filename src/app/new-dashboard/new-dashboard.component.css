@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap");
+
+:root{
+  --blue: #6366f1;
+  --red: #ff2c2c;
+  --green: #009800;
+  --diagram-width: 33%
+}
+ 
+
+.content{
+  /* border: 2px solid black; */
+  font-family: "Outfit", sans-serif;
+  display: flex; 
+  min-height: 100vh;
+}
+
+.content .diagram{
+  /* border: 8px solid green; */
+  width: var(--diagram-width);
+  border-radius: 0.5rem;  
+  padding: 0px 20px;
+  color: #33354d;
+  font-size: 22px;  
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.diagram strong{
+  /* border: 1px solid red; */
+  display: block;
+  padding: 4px;
+  text-align: center;
+}
+
+
+.diagram .canvas{
+  /* border: 1px solid black;  */
+  height: 80%;
+  margin-top: 42px;
+}
+
+.formulas {
+  margin: 0;
+  padding: 0;
+  width: calc(100% - var(--diagram-width));
+  box-sizing: border-box;  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  /* justify-content: center; */
+  /* border: 2px solid red; */
+}
+
+.card {
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  max-height: 13rem;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.add_new_formula{
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  height: 11rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.add_new_formula:hover{
+  cursor: pointer;
+  background: #e6e8ff;
+}
+
+
+/* .card-img {
+  border-radius: 0.5rem 0.5rem 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10rem;
+  width: 100%;
+  background: url("https://silicon.createx.studio/assets/img/portfolio/courses/01.jpg")
+    center center;
+  background-size: cover;
+} */
+
+/* .card-img button {
+  height: fit-content;
+  border: none;
+  margin: 1rem;
+} */
+
+/* .label {
+  background: #22c55e;
+  border-radius: 0.2rem;
+  color: #fff;
+} */
+
+/* .save {
+  width: 2rem;
+  height: 2rem !important;
+  border-radius: 2rem;
+  color: #33354d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.material-symbols-outlined {
+  height: 1rem;
+}
+
+.card-desc {
+  padding: 1rem;
+  color: #9397ad;
+}
+
+hr {
+  color: #9397ad;
+}
+
+.card-desc-last {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.card-desc-first {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-desc strong {
+  color: #33354d;
+  font-size: 22px;
+}
+
+.card-desc small{ 
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+
+.result_collection {
+  font-size: 1.5rem;
+  color: var(--blue); 
+  margin-bottom: 5px;
+}
+
+.icons i{  
+  margin-left: 8px;
+  font-size: 22px;
+  transition: all ease-in-out 0.3s;
+}
+
+.icons i:hover{
+  cursor: pointer;
+  transform: scale(1.25);
+  color: var(--blue);
+}
+
+.icons .edit:hover{ 
+  color: var(--green);
+}
+
+.icons .delete:hover{ 
+  color: var(--red);
+}
+
+.icons .tree_view:hover{ 
+  color: var(--blue);
+}

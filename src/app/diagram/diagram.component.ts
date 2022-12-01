@@ -24,15 +24,6 @@ export class DiagramComponent implements OnInit {
   }
 
   public ngAfterViewInit() {
-    $(
-      go.Node,
-      'Auto',
-      new go.Binding('location', 'loc', go.Point.parse),
-      $(go.Shape, 'Ellipse', { fill: 'red' }),
-      $(go.TextBlock, new go.Binding('text', 'key')),
-      $(go.TextBlock, { margin: 8 },
-        new go.Binding('fill', 'color'))
-    );
 
     this.diagram = $(go.Diagram, 'myDiagramDiv', {
       layout: $(go.TreeLayout, {
@@ -40,7 +31,7 @@ export class DiagramComponent implements OnInit {
         treeStyle: go.TreeLayout.StyleLastParents,
         arrangement: go.TreeLayout.ArrangementHorizontal,
         angle: 90,
-        layerSpacing: 105,
+        layerSpacing: 50,
         alternateAngle: 90,
         alternateLayerSpacing: 90,
         alternateAlignment: go.TreeLayout.AlignmentBus,
@@ -48,6 +39,22 @@ export class DiagramComponent implements OnInit {
       }),
       'undoManager.isEnabled': true,
     });
+
+    this.diagram.nodeTemplate = $(
+      go.Node,
+      'Auto',
+      $(
+        go.Shape,
+        'RoundedRectangle',
+        { strokeWidth: 5, stroke: null, name: 'SHAPE' },
+        new go.Binding('fill', 'color')
+      ),
+      $(
+        go.TextBlock,
+        { margin: 10, font: 'bold' },
+        new go.Binding('text', 'name')
+      )
+    );
 
     this.diagram.model = this.model;
   }

@@ -25,6 +25,9 @@ import { DiagramComponent } from './diagram/diagram.component';
 import { BasicNewUiComponent } from './basic-new-ui/basic-new-ui.component';
 import { DashboardNewUiComponent } from './dashboard-new-ui/dashboard-new-ui.component';
 import { FinalNewUiComponent } from './final-new-ui/final-new-ui.component';
+import { NewDashboardComponent } from './new-dashboard/new-dashboard.component';
+import { NewBasicComponent } from './new-basic/new-basic.component';
+import { NewFinalComponent } from './new-final/new-final.component';
 
 
 @NgModule({
@@ -32,7 +35,7 @@ import { FinalNewUiComponent } from './final-new-ui/final-new-ui.component';
     AppComponent,
     routingComponents,
     FinalComponent, 
-    DiagramComponent, BasicNewUiComponent, DashboardNewUiComponent, FinalNewUiComponent
+    DiagramComponent, BasicNewUiComponent, DashboardNewUiComponent, FinalNewUiComponent, NewDashboardComponent, NewBasicComponent, NewFinalComponent
   ],
   imports: [
     BrowserModule,

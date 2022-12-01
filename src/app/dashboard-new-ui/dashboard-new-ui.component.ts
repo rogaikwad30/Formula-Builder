@@ -45,7 +45,8 @@ export class DashboardNewUiComponent implements OnInit {
       parentKey = 1
       final_arr.push({ 
         'key': parentKey, 
-        'name': `${final_tag["name"]} = [${final_tag["formula"]}]`
+        'name': `${final_tag["name"]} = [${final_tag["formula"]}]`,
+        'color': 'white'
       })
     }
     
@@ -56,7 +57,8 @@ export class DashboardNewUiComponent implements OnInit {
         final_arr.push({ 
           'key': final_arr.length+1, 
           'name': `${obj["name"]} = [${obj["formula"]}]`,
-          'parent': parentKey
+          'parent': parentKey,
+          'color': 'white'
         })
 
         final_arr = this.constructGoJSFormattedData(obj,final_arr,final_arr.length)
